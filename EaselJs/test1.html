@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <link rel="stylesheet" href="css/test.css"/>
+    <link href="css/shared.css" rel="stylesheet" type="text/css"/>
+    <link href="css/examples.css" rel="stylesheet" type="text/css"/>
+
+
+    <script src="js/easeljs-0.8.2.min.js"></script>
+</head>
+<body>
+<canvas id="test1" width="500" height="500" style="background:#fff">
+
+</canvas>
+</body>
+</html>
+<script>
+    var stage = new createjs.Stage("test1");
+    var circle = new createjs.Shape();
+    circle.graphics.beginFill('red').beginStroke("#000").drawCircle(0,0,50);
+    circle.x=circle.y=50;//设置圆心
+
+  /*  circle.addEventListener("click", handleClick); //在对象circle上增加一个点击事件
+    function handleClick(event){
+        alert("1");
+    }
+    circle.addEventListener("mousedown", handlePress); //在对象circle上增加一个鼠标按下事件
+    function handlePress(event) {               //当鼠标进入的时候触发，对按下的事件进行监听
+       // event.addEventListener("mousemove", handleMove);
+    }
+    function handleMove(event) {
+        //鼠标移动时发生的事件
+    }*/
+
+    createjs.Ticker.addEventListener("tick",handleTick);
+    function handleTick(event){
+        circle.x+=10;
+        if(circle.x>stage.canvas.width-50){
+            circle.x=50;
+        }
+        stage.update();
+    }
+
+
+
+    stage.addChild(circle);
+    stage.update();
+</script>

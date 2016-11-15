@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <style>
+        .camera{
+            margin-top: 400px;
+            margin-left: 300px;
+            perspective: 400px;
+
+        }
+        .space{
+            transform-style:preserve-3d;
+            position:relative;
+            transform: rotateX(-30deg);
+            -webkit-animation: spin 10s infinite linear;
+        }
+        .slice{
+            background: rgba(45,179,74,.3);
+            border:2px solid #2db34a;
+            height:196px;
+            line-height: 196px;
+            text-align: center;
+            position: absolute;
+            width: 196px;
+        }
+        .camera .slice:nth-child(1) {
+            transform: rotateX(90deg) translateZ(100px);
+        }
+        .camera .slice:nth-child(2) {
+            transform: rotateX(90deg) translateZ(-100px);
+        }
+        .camera .slice:nth-child(3) {
+            transform: rotateY(90deg) translateZ(100px);
+        }
+        .camera .slice:nth-child(4) {
+            transform: rotateY(90deg) translateZ(-100px);
+        }
+        .camera .slice:nth-child(5) {
+            transform: translateZ(100px);
+        }
+        .camera .slice:nth-child(6) {
+            transform:  translateZ(-100px);
+        }
+        @-webkit-keyframes spin {
+            from { -webkit-transform: rotateX(0deg); }
+            to   { -webkit-transform: rotateX(360deg); }
+        }
+    </style>
+</head>
+<body>
+<div class="camera">
+    <div class="space">
+        <div class="slice"></div>
+        <div class="slice"></div>
+        <div class="slice"></div>
+        <div class="slice"></div>
+        <div class="slice"></div>
+        <div class="slice"></div>
+    </div>
+</div>
+</body>
+</html>
