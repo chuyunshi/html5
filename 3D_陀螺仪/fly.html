@@ -24,7 +24,7 @@
             perspective: 500px;
             top:10rem;
             left:5rem;
-            animation: updown1 5s linear infinite;
+            -webkit-animation: updown1 5s linear infinite;
         }
         .space {
             width: 5rem;
@@ -33,7 +33,7 @@
             transform-style: preserve-3d;
             transform-origin: 50% 50%;
             transform: rotateX(59deg) rotateY(-20deg) rotateZ(63deg);
-            animation: updown 1s linear infinite;
+            -webkit-animation: updown 1s linear infinite;
         }
         .slide {
             width: 2.5rem;
@@ -49,15 +49,15 @@
         .camera .slide:nth-child(1) {
             transform-origin: 100% ;
             transform: rotateX(0deg) rotateY(0deg);
-            animation: left 1s linear infinite;
+            -webkit-animation: left 1s linear infinite;
         }
         .camera .slide:nth-child(2) {
             left:2.5rem;
             transform-origin: 0 ;
             transform: rotateX(0deg) rotateY(0deg);
-            animation: right 1s linear infinite;
+            -webkit-animation: right 1s linear infinite;
         }
-        @keyframes right {
+        @-webkit-keyframes right {
             0% {
                 transform: rotateY(-85deg) ;
             }
@@ -68,7 +68,7 @@
                 transform: rotateY(-85deg) ;
             }
         }
-        @keyframes left {
+        @-webkit-keyframes left {
             0% {
                 transform: rotateY(85deg) ;
             }
@@ -79,7 +79,7 @@
                 transform: rotateY(85deg);
             }
         }
-        @keyframes updown {
+        @-webkit-keyframes updown {
             0% {
                 transform: rotateX(59deg) rotateY(-20deg) rotateZ(63deg) translateY(0rem);
             }
@@ -90,7 +90,7 @@
                 transform: rotateX(59deg) rotateY(-20deg) rotateZ(63deg) translateY(0rem);
             }
         }
-        @keyframes updown1 {
+        @-webkit-keyframes updown1 {
             0% {
                 transform:translateX(-20rem)  translateY(6rem) ;
             }
