@@ -1,0 +1,269 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=0,minimum-scale=1.0,maximum-scale=1.0,minimal-ui" />
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <title>你和ta之间，只有一顿饭的距离</title>
+    <link rel="stylesheet" href="css/animate.min.css"/>
+    <link rel="stylesheet" href="css/main.css?v=a2ee2fa4-dd6d-440a-a362-49564d02968f"/>
+    <link rel="stylesheet" href="css/useanimate.css?v=a2ee2fa4-dd6d-440a-a362-49564d02968f"/>
+</head>
+<body class="hidden">
+<div class="page">
+    <div class="page ab" id="errorScreen">
+        <div class="font ab turn">
+            <img src="img/turn.png" alt=""/>
+        </div>
+        <p class="ab">为了更好的体验，请使用竖屏浏览</p>
+    </div>
+    <!--音乐图标-->
+    <div class="music-ico">
+        <img class="ab animated tada2 infinite" src="img/music.png" alt=""/>
+        <img class="ab close_music hide" src="img/closemusic.png" alt=""/>
+    </div>
+    <audio preload id="bgm" class="bgm" loop="loop">
+        <source src="img/media/sound/bgm.mp3" type="audio/mpeg">
+    </audio>
+
+    <!--加载页-->
+    <div class="page ab loading pageH show">
+        <img class="ab rem"  src="img/loadingbg.jpg" alt=""/>
+        <canvas class="ab" id="loadV" data-for="loadV"></canvas>
+        <div class="loading_num  ab">
+            0%
+        </div>
+    </div>
+    <div class="page1 page pageH" id="page1">
+        <canvas class="ab rem" id="into01V"></canvas>
+        <img class="ab into01 animated fadeInUp1" src="img/into01.png" />
+        <img class="ab into02 animated fadeInUp1" src="img/into02.png"/>
+
+        <img class="ab up_down1 up_down" data-p="1" data-np="2" src="img/down.png" alt=""/>
+
+    </div>
+    <div class="page2 page pageH" id="page2">
+        <canvas class="ab rem" id="into02V"></canvas>
+        <img class="ab into03 animated fadeInUp1" src="img/into03.png"/>
+        <img class="ab into04 animated fadeInUp1" src="img/into04.png"/>
+        <img class="ab up_down1 up_down" data-p="2" data-np="3" src="img/down.png"/>
+    </div>
+    <div class="page3 page pageH" id="page3">
+        <canvas class="ab rem" id="into03V" data-for="into03V"></canvas>
+        <img class="ab into05 animated fadeInUp1" src="img/into05.png" />
+        <img class="ab into06 animated fadeInUp1" src="img/into06.png"/>
+        <img class="ab up_down1 up_down" data-p="3" data-np="4" src="img/down.png" alt=""/>
+    </div>
+    <div class="page4 page pageH" id="page4">
+        <canvas class="ab rem" id="into04V" data-for="into04V"></canvas>
+        <img class="ab index01 animated fadeInUp1" src="img/index01.png"/>
+        <img class="ab index02 animated fadeInUp1" src="img/index02.png"/>
+        <img class="ab index03 animated fadeInUp1" src="img/index03.png" />
+        <img class="ab index04 animated fadeInUp1" src="img/index04.png"/>
+        <img class="ab up_down1 up_down" data-p="4" data-np="5" src="img/down.png" alt=""/>
+    </div>
+
+    <!--父母-->
+    <div class="page5 page pageH" id="page5">
+        <canvas class="ab rem" id="p1V"></canvas>
+        <img class="ab animated fadeInUp2 dad" src="img/01/dad.png" />
+        <img class="ab animated fadeInUp2 ma" src="img/01/ma.png"/>
+        <img class="ab animated fadeInUp1 paget01" src="img/01/paget01.png"/>
+        <img class="ab animated fadeInUp1 paget02" src="img/01/paget02.png"/>
+        <div class='ab sb dsb'>
+            <img class="ab btn_pub animated fadeIn btn01" data-num="1" src="img/01/bt01.png"/>
+        </div>
+    </div>
+    <!--朋友-->
+    <div class="page6 page pageH" id="page6">
+        <canvas class="ab rem" id="p4V"></canvas>
+        <img class="ab page4t1 animated fadeInUp2" src="img/04/04tetx01.png"/>
+        <img class="ab page4t2 animated fadeInUp2" src="img/04/04tetx02.png" />
+        <img class="ab page4t3 animated fadeInUp1" src="img/04/04tetx03.png"/>
+        <img class="ab page4t4 animated fadeInUp1" src="img/04/04tetx04.png"/>
+        <div class='ab sb dsb'>
+            <img class="ab btn04 btn_pub animated fadeIn" data-num="4" src="img/04/btn04.png"/>
+        </div>
+    </div>
+    <!--恋人-->
+    <div class="page7 page pageH" id="page7">
+        <canvas class="ab rem" id="p3V"></canvas>
+        <img class="ab icon01 animated fadeInUp2" src="img/03/icon01.png"/>
+        <img class="ab icon02 animated fadeInUp2" src="img/03/icon02.png" />
+
+        <img class="ab page3t1 animated fadeInUp2" src="img/03/03text01.png"/>
+        <img class="ab page3t2 animated fadeInUp2" src="img/03/03text02.png" />
+        <img class="ab page3t3 animated fadeInUp1" src="img/03/03text03.png"/>
+        <img class="ab page3t4 animated fadeInUp1" src="img/03/03text04.png"/>
+        <div class='ab sb dsb'>
+            <img class="ab btn03 btn_pub animated fadeIn" data-num="3" src="img/03/btn03.png"/>
+        </div>
+    </div>
+    <!--子女-->
+    <div class="page8 page pageH" id="page8">
+        <canvas class="ab rem" id="p5V"></canvas>
+        <img class="ab page5t1 animated fadeInUp2" src="img/05/05text01.png"/>
+        <img class="ab page5t2 animated fadeInUp2" src="img/05/05text02.png" />
+        <img class="ab page5t3 animated fadeInUp1" src="img/05/05text03.png"/>
+        <img class="ab page5t4 animated fadeInUp1" src="img/05/05text04.png"/>
+        <div class='ab sb dsb'>
+            <img class="ab btn05 btn_pub animated fadeIn" data-num="5" src="img/05/btn05.png"/>
+        </div>
+    </div>
+    <!--夫妻-->
+    <div class="page9 page pageH" id="page9">
+        <canvas class="ab rem" id="p2V"></canvas>
+
+        <img class="ab page2t1 animated fadeInUp2" src="img/02/page2t1.png"/>
+        <img class="ab page2t2 animated fadeInUp2" src="img/02/page2t2.png" />
+        <img class="ab page2t3 animated fadeInUp1" src="img/02/page2t3.png"/>
+        <img class="ab page2t4 animated fadeInUp1" src="img/02/page2t4.png"/>
+        <div class='ab sb dsb'>
+             <img class="ab btn02 btn_pub animated fadeIn" data-num="2" src="img/02/btn02.png"/>
+        </div>
+    </div>
+    <div class="button-prev btn_pub2 btn_left left_right">
+        <img src="img/left.png" alt=""/>
+    </div>
+    <div class="button-next btn_pub2 btn_right left_right1">
+        <img src="img/right.png" alt=""/>
+    </div>
+    <div class="piao ab page hide" data-num="0">
+        <img class="ab rem" src="img/piao/piaobg.jpg" alt=""/>
+        <img class="ab piao_zheng" src="img/piao/piao_zheng.png" alt=""/>
+        <img class="ab lingqu " data-num="0" src="img/piao/lingqu.png" alt=""/>
+    </div>
+    <div class="piao-c piao1 ab page hide">
+        <img class="ab rem" src="img/piao/piaobg.jpg" alt=""/>
+        <div class="ab piao_zheng ">
+            <img class="ab _info rotate_y1" src="img/piao/01.png" alt=""/>
+            <div class="pic ab">
+                <img class="codeimg fadeIn_1" src="">
+                <p class="words fadeIn_1 ab"></p>
+            </div>
+        </div>
+        <img class="ab again btn_pub1" src="img/piao/more.png" alt=""/>
+        <a href="http://m.fotile.com/hero/qrszj.html">
+            <img class="ab link btn_pub1" src="img/piao/link.png" alt=""/>
+        </a>
+    </div>
+    <div class="piao-c piao2 ab page hide">
+        <img class="ab rem" src="img/piao/piaobg.jpg" alt=""/>
+        <div class="ab piao_zheng ">
+            <img class="ab _info rotate_y1" src="img/piao/02.png" alt=""/>
+            <div class="pic ab">
+                <img class="codeimg fadeIn_1" src="">
+                <p class="words fadeIn_1 ab"></p>
+            </div>
+        </div>
+        <img class="ab again btn_pub1" src="img/piao/more.png" alt=""/>
+        <a href="http://m.fotile.com/hero/qrszj.html">
+            <img class="ab link btn_pub1" src="img/piao/link.png" alt=""/>
+        </a>
+    </div>
+    <div class="piao-c piao3 ab page hide">
+        <img class="ab rem" src="img/piao/piaobg.jpg" alt=""/>
+        <div class="ab piao_zheng ">
+            <img class="ab _info rotate_y1" src="img/piao/03.png" alt=""/>
+            <div class="pic ab">
+                <img class="codeimg fadeIn_1" src="">
+                <p class="words fadeIn_1 ab"></p>
+            </div>
+        </div>
+        <img class="ab again btn_pub1" src="img/piao/more.png" alt=""/>
+        <a href="http://m.fotile.com/hero/qrszj.html">
+            <img class="ab link btn_pub1" src="img/piao/link.png" alt=""/>
+        </a>
+    </div>
+    <div class="piao-c piao4 ab page hide">
+        <img class="ab rem" src="img/piao/piaobg.jpg" alt=""/>
+        <div class="ab piao_zheng ">
+            <img class="ab _info rotate_y1" src="img/piao/04.png" alt=""/>
+            <div class="pic ab">
+                <img class="codeimg fadeIn_1" src="">
+                <p class="words fadeIn_1 ab"></p>
+            </div>
+        </div>
+        <img class="ab again btn_pub1" src="img/piao/more.png" alt=""/>
+        <a href="http://m.fotile.com/hero/qrszj.html">
+            <img class="ab link btn_pub1" src="img/piao/link.png" alt=""/>
+        </a>
+    </div>
+    <div class="piao-c piao5 ab page hide">
+        <img class="ab rem" src="img/piao/piaobg.jpg" alt=""/>
+        <div class="ab piao_zheng ">
+            <img class="ab _info rotate_y1" src="img/piao/05.png" alt=""/>
+
+            <div class="pic ab ">
+                <img class="codeimg fadeIn_1" src="">
+                <p class="words fadeIn_1 ab"></p>
+            </div>
+
+        </div>
+        <img class="ab again btn_pub1" src="img/piao/more.png" alt=""/>
+        <a href="http://m.fotile.com/hero/qrszj.html">
+            <img class="ab link btn_pub1" src="img/piao/link.png" alt=""/>
+        </a>
+    </div>
+
+    <div class="information ab hide animated fadeIn" id="information">
+        <img src="img/piao/fu.png" alt=""/>
+    </div>
+
+</div>
+<script src="http://res.wx.qq.com/open/js/jweixin-1.0.0.js"></script>
+<script>
+    document.write("<script src='jssdk.php?url="+escape(window.location.href)+"&v=1.0'><\/script>");
+
+    var sharedata = {
+        title:'你的2016饭局清单，请查收',
+        link:'http://wechat.fotile.com/2017newyear/',
+        img:'http://wechat.fotile.com/2017newyear/img/share.jpg'
+    }
+    var sharedata1 = {
+        title:'你的2016饭局清单，请查收',
+        link:'http://wechat.fotile.com/2017newyear/',
+        img:'http://wechat.fotile.com/2017newyear/img/share.jpg',
+        desc:'盘点过去一年，你欠下了多少顿饭？',
+    }
+
+    wxcallback(sharedata);
+    function wxcallback(sharedata)
+    {
+        var share1 = {
+            title: sharedata.title,
+            link: sharedata.link,
+            imgUrl: sharedata.img,
+            success: sharedata.success,
+            cancel: sharedata.cancel
+        };
+
+        var share2 = {
+            title: sharedata1.title,
+            link: sharedata1.link,
+            imgUrl: sharedata1.img,
+            desc: sharedata1.desc,
+            success: sharedata.success,
+            cancel: sharedata.cancel
+        };
+
+        wx.ready(function () {
+            wx.onMenuShareTimeline(share1);
+            wx.onMenuShareAppMessage(share2);
+        });
+    }
+</script>
+<script src="js/zepto.min.js"></script>
+<script src="js/touch.js"></script>
+<script src="js/preloadjs-0.6.2.min.js"></script>
+<script src="js/event.js"></script>
+<script src="js/fx.js"></script>
+<script src="js/rem.js"></script>
+<script src="js/soundjs-0.6.2.min.js"></script>
+<script src="js/easeljs-0.8.2.min.js"></script>
+<script src="js/index.js?v=a2ee2fa4-dd6d-440a-a362-49564d02968f"></script>
+<script type="text/javascript" src="http://pingjs.qq.com/h5/stats.js" name="MTAH5" sid="500375334" ></script>
+</body>
+</html>

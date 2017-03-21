@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=0,minimum-scale=1.0,maximum-scale=1.0,minimal-ui" />
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <title>探秘永恒</title>
+    <link rel="stylesheet" href="css/animate.min.css"/>
+    <link rel="stylesheet" href="css/my_animate.css"/>
+    <link rel="stylesheet" href="css/main.css?v=1.1.1"/>
+    <script>
+        var temp = 8,source = 0,save_diam=1;
+    </script>
+</head>
+<body  class="hidden p-bg">
+
+<div id="errorScreen">
+    <div class="re">
+        <div class="font">
+            <img src="img/turn.gif">
+            <p>请将手机调至竖屏状态...</p>
+        </div>
+    </div>
+</div>
+
+<div class="page">
+    <div class="logo ab">
+        <img src="img/logo.png" alt=""/>
+    </div>
+
+    <audio preload id="bgm" class="bgm" loop="loop">
+        <source src="img/music/2.mp3" type="audio/mpeg">
+    </audio>
+
+
+
+    <div class="content">
+        <!--加载页-->
+        <div class="loading ab p-bg animated fadeIn">
+            <div class="loading_box ab">
+                <img src="img/loading/loading_box.png" alt=""/>
+            </div>
+            <div class="loading_book ab">
+                <img class="ab " src="img/select/yes2.png" alt=""/>
+            </div>
+            <div class="loading_num ab">
+                <div class="addNum ab">
+
+                </div>
+                <div class="percent ab">0%</div>
+            </div>
+
+        </div>
+        <!--选择页-->
+        <div class="select p-bg ab hide  animated fadeIn">
+            <div class="select_box ab">
+                <img src="img/select/box.png" alt=""/>
+            </div>
+            <div class="select_logo ab">
+                <img src="img/select/logo.png" alt=""/>
+                <img class="ab logo_title fadeIn0s " src="img/select/diam_light.png" alt=""/>
+            </div>
+            <div class="select_title ab">
+                <img src="img/select/title.png" alt=""/>
+                <img class="ab title_light fadeIn0s" src="img/select/title_light.png" alt=""/>
+            </div>
+
+            <div class="select_1 hide ab ">
+                <img src="img/select/1.png" alt=""/>
+            </div>
+
+            <div class="select_3 ab ">
+                <img src="img/select/3.png" alt=""/>
+            </div>
+
+            <div class="select_down ab updown">
+                <img src="img/select/down.png" alt=""/>
+            </div>
+
+
+            <div>
+                <div class="diam_box ab diam_l" data-index="7">
+                    <div class=" select_diam_box hide ab">
+                        <img class="ab" src="img/select/yes.png" alt=""/>
+                    </div>
+                    <img class="ab diamm" src="img/select/no1.png" alt=""/>
+                    <img class="ab diamm hide" src="img/select/yes1.png" alt=""/>
+                </div>
+                <div class="diam_box ab diam_c this" data-index="8">
+                    <div class=" select_diam_box ab">
+                        <img class="ab" src="img/select/yes.png" alt=""/>
+                    </div>
+                    <img class="ab diamm" src="img/select/no2.png" alt=""/>
+                    <img class="ab diamm" src="img/select/yes2.png" alt=""/>
+                </div>
+                <div class="diam_box ab diam_r" data-index="9">
+                    <div class=" select_diam_box hide ab">
+                        <img class="ab" src="img/select/yes.png" alt=""/>
+                    </div>
+                    <img class="ab diamm" src="img/select/no3.png" alt=""/>
+                    <img class="ab diamm hide" src="img/select/yes3.png" alt=""/>
+                </div>
+            </div>
+
+            <div class="select_btn btn click ab">
+
+                <img class="ab " src="img/select/start.png" alt=""/>
+            </div>
+        </div>
+        <!--解码页-->
+        <div class="crack p-bg ab  hide  animated ">
+            <div class="music_bg music_bg1 ab animated fadeIn">
+                <img class="ab" src="img/crack/music_bg.png" alt=""/>
+            </div>
+            <div class="music_bg music_bg2 ab animated fadeIn">
+                <img class="ab " src="img/crack/music_bg.png" alt=""/>
+            </div>
+
+            <div class="crack_pic ab">
+                <img src="img/crack/1.png" alt=""/>
+
+                <div class="password ab animated " >
+                    <img src="img/password/0.png" alt=""/>
+                </div>
+
+                <img class="ab jiqi leftright" src="img/crack/2.png" alt=""/>
+            </div>
+           <!-- <div class="music_btn ab">
+                <img class="ab" src="img/music.png" alt=""/>
+            </div>-->
+            <div class="crack_bigbox animated fadeIn ">
+
+            <div class="book_btn ab ">
+                <img class="ab" src="img/crack/book.png" alt=""/>
+                <img class="ab hide" src="img/crack/book1.png" alt=""/>
+            </div>
+
+            <div class="ab button_pub left_btn hide fadeIn0s">
+                <img class="ab" src="img/crack/left.png" alt=""/>
+            </div>
+
+            <div class="word_in ab " >
+               <!-- <img class="ab" style="left:0;" src="img/crack/big_box.png" alt=""/>-->
+
+                <div class="box_line ab">
+                    
+                </div>
+               <!-- <img class="ab box_lr" style="left:0; width:0.215rem;height:2rem; " src="img/crack/left_box.png" alt=""/>
+                <img class="ab box_lr" style="right:0; width:0.215rem;height:2rem; " src="img/crack/right_box.png" alt=""/>
+-->
+            </div>
+            <div class="right_btn button_pub ab hide fadeIn0s" >
+                <img class="ab" src="img/crack/right.png" alt=""/>
+            </div>
+
+
+
+            <div class="word_word ab ">
+                <img src="img/crack/word.png" alt=""/>
+            </div>
+
+
+            <div class="word_out ab">
+
+            </div>
+            <div class="openbook ab ">
+                <img  src="img/crack/openbook.png" alt=""/>
+                <img class="crack_delete ab" src="img/crack/delete.png" alt=""/>
+            </div>
+            </div>
+
+
+        </div>
+        <!--提示页-->
+        <div class="prompt ab  hide  animated fadeIn">
+           <!-- <div class="ab prompt_one">
+                <img src="img/prompt/one.png" alt=""/>
+            </div>-->
+
+            <div class="lookBook ab">
+                <img src="img/prompt/lookBook.png" alt=""/>
+            </div>
+            <div class="box_small ab">
+                <img src="img/prompt/box_small.png" alt=""/>
+            </div>
+            <div class="input ab">
+                <img src="img/prompt/input.png" alt=""/>
+            </div>
+
+            <div class="prompt_in ab">
+                <div class="box_line2 ab">
+
+                </div>
+            </div>
+            <div class="box_big ab">
+                <img src="img/prompt/box_big.png" alt=""/>
+            </div>
+        </div>
+        <!--成功页-->
+        <div class="p-bg success ab hide  animated fadeIn">
+            <!--<div class="music_btn  ab">
+                <img class="ab" src="img/music.png" alt=""/>
+            </div>-->
+            <div class="success_pic ab">
+                <ul>
+                    <li class="ab">
+                        <img  src="img/success/00.png" alt=""/>
+                    </li>
+                    <li class="ab hide">
+                        <img  src="img/success/01.png" alt=""/>
+                    </li>
+                    <li class="ab hide">
+                        <img  src="img/success/02.png" alt=""/>
+                    </li>
+                    <li class="ab hide">
+                        <img  src="img/success/03.png" alt=""/>
+                    </li>
+                    <li class="ab hide">
+                        <img  src="img/success/success.png" alt=""/>
+                        <div class="ab success_change">
+                            <img src="img/success/1.png" alt=""/>
+                        </div>
+                    </li>
+                </ul>
+
+            </div>
+            <div class=" success_tvc btn ab">
+                <img src="img/success/success_tvc.png" alt=""/>
+            </div>
+            <div class="success_save btn ab ">
+                <img src="img/success/success_save.png" alt=""/>
+            </div>
+
+            <div class="find_forever  btn ab hide">
+                <a href="http://adif.forevermarkchina.com/m/index.html">
+                    <img src="img/tvc/find_forever.png" alt=""/>
+                </a>
+            </div>
+            
+        </div>
+        <!--失败页-->
+        <div class="unsuccess ab hide  animated fadeIn">
+            <div class="unsuccess_logo ab">
+                <img src="img/unsuccess/logo.png" alt=""/>
+            </div>
+            <div class="unsuccess_change ab">
+                <img src="img/unsuccess/change.png" alt=""/>
+            </div>
+            <div class="unsuccess_word ab">
+                <img src="img/unsuccess/word.png" alt=""/>
+            </div>
+        </div>
+        <!--封存页-->
+        <div class="ab save p-bg hide  animated fadeIn">
+            <!--<div class="music_btn  ab">
+                <img class="ab" src="img/music.png" alt=""/>
+            </div>-->
+            <div class="save_pic   ab">
+                <img src="img/save/save_pic.png" alt=""/>
+                <div class="ab save_box hidden">
+                    <div class="ab save_box_1">
+                        <p class="save_0 ">
+                            <img  src="img/save/00.png" alt=""/>
+                        </p>
+                        <p class="save_1 ">
+                            <img  src="img/save/01.png" alt=""/>
+                        </p>
+                        <p class="save_2 ">
+                            <img  src="img/save/02.png" alt=""/>
+                        </p>
+                        <p class="save_3 ">
+                            <img  src="img/save/03.png" alt=""/>
+                        </p>
+                        <p class="save_4 ">
+                            <img  src="img/save/04.png" alt=""/>
+                        </p>
+                        <p class="save_5 ">
+                            <img  src="img/save/05.png" alt=""/>
+                        </p>
+                        <p class="save_6 ">
+                            <img  src="img/save/06.png" alt=""/>
+                        </p>
+
+                    </div>
+                    <span class="span_left span_pub ab">[</span>
+                    <span class="span_right span_pub ab">]</span>
+                </div>
+                <div class="save_change ab">
+                    <img src="img/save/1.png" alt=""/>
+                </div>
+            </div>
+            <div class="save_diam btn ab">
+                <img src="img/success/success_save.png" alt=""/>
+            </div>
+        </div>
+        <!--封存成功页-->
+        <div class="ab save_success p-bg hide animated fadeIn">
+            <div class="save_success_pic ab">
+                <img src="img/save/save_success_box.png" alt=""/>
+                <div class="ab password_pic">
+
+                </div>
+            </div>
+            <div class="ab sent_box">
+                <img src="img/save/sent_box.png" alt=""/>
+
+            </div>
+            <div class=" save_success_tvc btn ab">
+                <img src="img/success/success_tvc.png" alt=""/>
+            </div>
+        </div>
+        <!--tvc-->
+        <div class="tvc ab p-bg hide  animated fadeIn">
+           <!-- <div class="music_btn playing ab">
+                <img class="ab" src="img/music.png" alt=""/>
+            </div>-->
+            <div class="tvc_video ab">
+
+                <iframe class="ab" src='http://player.youku.com/embed/XMTg0NDQ1Njk0OA==' frameborder=0 'allowfullscreen'></iframe>
+            </div>
+
+            <div class="btn ab tvc-road">
+                <a href="http://endleabrochure.forevermarkchina.com"><img src="img/tvc/diam_road.png" alt=""/></a>
+
+            </div>
+
+            <div class="btn ab tvc-return">
+                <img src="img/tvc/return.png" alt=""/>
+            </div>
+
+
+        </div>
+
+    </div>
+</div>
+<script>
+    var urlPrefix = 'http://adif.forevermarkchina.com/m';
+</script>
+<script src="js/zepto.min.js"></script>
+<script src="js/preloadjs-0.6.2.min.js"></script>
+<script src="js/soundjs-0.6.2.min.js"></script>
+<script src="js/rem.js"></script>
+<script src="js/event.js"></script>
+<script src="js/fx.js"></script>
+<script src="js/main.js?v=1.1.1"></script>
+<script src="js/jweixin-1.0.0.js"></script>
+<script src="js/share.js?v=1.1.1"></script>
+<script type="text/javascript" src="http://pingjs.qq.com/h5/stats.js" name="MTAH5" sid="500356695" ></script>
+</body>
+</html>
+
+
+

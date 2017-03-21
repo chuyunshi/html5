@@ -1,0 +1,673 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>开启全新专业级家庭SUV之旅</title>
+    <meta name="format-detection" content="telephone=no">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=0,minimum-scale=1.0,maximum-scale=1.0,minimal-ui" />
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+
+    <link rel="stylesheet" href="css/animate.min.css"/>
+    <link rel="stylesheet" href="css/swiper.min.css"/>
+    <link rel="stylesheet" href="css/my_animation.css?v=2016.12.29"/>
+    <link rel="stylesheet" href="css/main.css?v=2016.12.29"/>
+</head>
+<body class="hidden camera page">
+<div class="page page_bg_pub">
+    <div class="page ab" id="errorScreen">
+        <div class="font ab turn">
+            <img src="img/turn.png" alt=""/>
+        </div>
+        <p class="ab">为了更好的体验，请使用横屏浏览</p>
+    </div>
+    <audio preload id="bgm" class="bgm" loop="loop">
+        <source src="img/media/sound/bgm.mp3" type="audio/mpeg">
+    </audio>
+    <audio preload id="bgm1" class="bgm1" loop="loop">
+        <source src="img/media/sound/loading.mp3" type="audio/mpeg">
+    </audio>
+
+    <div class="line-color ab">
+    </div>
+    <!--菜单-->
+    <div class="menu_list ab fadeIn1s hide">
+        <ul class='menu_box ab'>
+            <li class="menu_1  re this" data-link="1">
+                <img class="ab" src="img/menu/01.png" alt=""/>
+                <img class="ab menu-active" src="img/menu/1.png" alt=""/>
+            </li>
+            <li class="menu_2  re click this" data-link="2">
+                <img class="ab" src="img/menu/02.png" alt=""/>
+                <img class="ab menu-active hide" src="img/menu/2.png" alt=""/>
+            </li>
+            <li class="menu_3  re click this" data-link="3">
+                <img class="ab" src="img/menu/03.png" alt=""/>
+                <img class="ab menu-active hide" src="img/menu/3.png" alt=""/>
+            </li>
+            <li class="menu_4  re click this" data-link="4">
+                <img class="ab" src="img/menu/04.png" alt=""/>
+                <img class="ab menu-active hide" src="img/menu/4.png" alt=""/>
+            </li>
+            <li class="menu_5  re click this" data-link="5">
+                <img class="ab" src="img/menu/05.png" alt=""/>
+                <img class="ab menu-active hide" src="img/menu/5.png" alt=""/>
+            </li>
+            <li class="menu_6  re click this" data-link="6">
+                <img class="ab" src="img/menu/06.png" alt=""/>
+                <img class="ab menu-active hide" src="img/menu/6.png" alt=""/>
+            </li>
+            <li class="menu_7  re click this swiper_this" data-link="7">
+                <img class="ab" src="img/menu/07.png" alt=""/>
+                <img class="ab menu-active hide" src="img/menu/7.png" alt=""/>
+            </li>
+        </ul>
+    </div>
+    <!--加载页-->
+    <div class="loading ab page animated hide">
+        <div class="logo ab">
+            <img src="img/loading/logo.png" alt=""/>
+        </div>
+        <img class="ab _img1  fadeIn1s" src="img/loading/1.png" alt=""/>
+        <img class="ab _img2  fadeIn1s hide" src="img/loading/2.png" alt=""/>
+        <img class="ab _img3  fadeIn1s hide" src="img/loading/3.png" alt=""/>
+        <img class="ab _img4  fadeIn1s hide" src="img/loading/4.png" alt=""/>
+        <img class="ab _img5  fadeIn1s hide" src="img/loading/5.png" alt=""/>
+        <img class="ab _img6  fadeIn1s hide" src="img/loading/6.png" alt=""/>
+        <div class="ab load_biao animated fadeIn1s">
+            <img class="ab load_pan" src="img/loading/pan.png" alt=""/>
+            <img class="ab load_zhen " src="img/loading/zhen.png" alt=""/>
+        </div>
+    </div>
+    <!--引导页-->
+    <div class="swiper-container swiper-container1 page  animated fadeIn1s hide ">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide">
+                <img id="auto_play_pic" src="img/tinified/loading1.jpg" alt=""/>
+            </div>
+            <div class="swiper-slide">
+                <img src="img/tinified/loading2.jpg" alt=""/>
+            </div>
+            <div class="swiper-slide ">
+                <img src="img/tinified/loading3.jpg" alt=""/>
+            </div>
+            <div class="swiper-slide swiper-no-swiping">
+                <img class="ab" src="img/tinified/loading3.jpg" alt=""/>
+                <div class="swiper_p4 ab page">
+                    <img class="ab img1" src="img/tinified/line.png" alt=""/>
+                    <img class="ab load_start load_pub animated" src="img/tinified/start.png" alt=""/>
+                    <img class="ab load_starttext animated" src="img/tinified/starttext.png" alt=""/>
+                    <img class="ab load_arrow up_y animated" src="img/tinified/arrow.png" alt=""/>
+                    <img class="ab load_start1 img2 load_pub hide animated fadeIn" src="img/tinified/start1.png" alt=""/>
+                    <img class="ab load_start2 img2 load_pub hide animated fadeIn" src="img/tinified/start2.png" alt=""/>
+                    <img class="ab load_start3 img2 load_pub hide animated fadeIn" src="img/tinified/start3.png" alt=""/>
+                </div>
+            </div>
+        </div>
+
+        <div class="swiper-button-next swiper-button fadeIn_x ">
+            <img src="img/tinified/rightarrow.png" alt=""/>
+            <img class="swiper_btn_words ab" src="img/tinified/words.png" alt=""/>
+        </div>
+    </div>
+    <!--正文-->
+    <div class="page_box fadeIn1s hide">
+        <!--360-->
+        <div class="p1 ab page page_z link1 page_bg1 rotate_Y_In">
+            <div class="music-ico  fadeIn1s">
+                <div class="music-ico0 music-ico1 ">
+                    <img class="ab " src="img/media/sound/1.png" alt=""/>
+                    <img class="ab hide" src="img/media/sound/2.png" alt=""/>
+                    <img class="ab hide" src="img/media/sound/3.png" alt=""/>
+                    <img class="ab hide" src="img/media/sound/4.png" alt=""/>
+                </div>
+                <img class="ab hide close" src="img/media/sound/5.png" alt=""/>
+            </div>
+
+            <img class="p1_btn ab this" src="img/p1/btn.png" alt=""/>
+            <img class="p1_btn1 ab this" data-num="7" src="img/p1/btn2.png" alt=""/>
+
+            <div class="ab p1_yes">
+                <div>
+                    <img class="ab yes_img hide" src="img/p1/red0.png" alt=""/>
+                    <img class="ab yes_img hide" src="img/p1/gray0.png" alt=""/>
+                    <img class="ab yes_img " src="img/p1/white0.png" alt=""/>
+                    <img class="ab yes_img hide" src="img/p1/black0.png" alt=""/>
+                </div>
+                <div>
+                    <img class="ab select_btn" src="img/p1/no.png" alt=""/>
+                    <img class="ab select_btn hide" src="img/p1/yes.png" alt=""/>
+                </div>
+            </div>
+
+            <div class="ab select_box  hidden">
+                <div class=" select_list re" data-select="0">
+                    <img class="ab select_img" src="img/p1/red0.png" alt=""/>
+                    <img class="ab select_img hide" src="img/p1/red.png" alt=""/>
+                </div>
+                <div class=" select_list re" data-select="1">
+                    <img class="ab select_img" src="img/p1/gray0.png" alt=""/>
+                    <img class="ab select_img hide" src="img/p1/gray.png" alt=""/>
+                </div>
+                <div class=" select_list re" data-select="2">
+                    <img class="ab select_img hide" src="img/p1/white0.png" alt=""/>
+                    <img class="ab select_img" src="img/p1/white.png" alt=""/>
+                </div>
+                <div class=" select_list re" data-select="3">
+                    <img class="ab select_img" src="img/p1/black0.png" alt=""/>
+                    <img class="ab select_img hide" src="img/p1/black.png" alt=""/>
+                </div>
+            </div>
+            <div class="rotate360_pic ab">
+                <div class="rotate_box_1 rotate_box ab">
+                    <img class='ab' src='img/car_360_2/1.png'/>
+                </div>
+                <div class="rotate_box_2 rotate_box ab hide">
+                    <img class='ab' src='img/car_360_2/2.png'/>
+                </div>
+                <div class="rotate_box_3 rotate_box ab hide">
+                    <img class='ab' src='img/car_360_2/3.png'/>
+                </div>
+                <div class="rotate_box_4 rotate_box ab hide">
+                    <img class='ab' src='img/car_360_2/4.png'/>
+                </div>
+                <div class="rotate_box_5 rotate_box ab hide">
+                    <img class='ab' src='img/car_360_2/5.png'/>
+                </div>
+                <div class="rotate_box_6 rotate_box ab hide">
+                    <img class='ab' src='img/car_360_2/6.png'/>
+                </div>
+                <div class="rotate_box_7 rotate_box ab hide">
+                    <img class='ab' src='img/car_360_2/7.png'/>
+                </div>
+                <div class="rotate_box_8 rotate_box ab hide">
+                    <img class='ab' src='img/car_360_2/8.png'/>
+                </div>
+                <div class="rotate_box_9 rotate_box ab hide">
+                    <img class='ab' src='img/car_360_2/9.png'/>
+                </div>
+                <div class="rotate_box_10 rotate_box ab hide">
+                    <img class='ab' src='img/car_360_2/10.png'/>
+                </div>
+                <div class="rotate_box_11 rotate_box ab hide">
+                    <img class='ab' src='img/car_360_2/11.png'/>
+                </div>
+                <div class="rotate_box_12 rotate_box ab hide">
+                    <img class='ab' src='img/car_360_2/12.png'/>
+                </div>
+                <div class="rotate_box_13 rotate_box ab hide">
+                    <img class='ab' src='img/car_360_2/13.png'/>
+                </div>
+                <div class="rotate_box_14 rotate_box ab hide">
+                    <img class='ab' src='img/car_360_2/14.png'/>
+                </div>
+                <div class="rotate_box_15 rotate_box ab hide">
+                    <img class='ab' src='img/car_360_2/15.png'/>
+                </div>
+                <div class="rotate_box_16 rotate_box ab hide">
+                    <img class='ab' src='img/car_360_2/16.png'/>
+                </div>
+                <div class="rotate_box_17 rotate_box ab hide">
+                    <img class='ab' src='img/car_360_2/17.png'/>
+                </div>
+                <div class="rotate_box_18 rotate_box ab hide">
+                    <img class='ab' src='img/car_360_2/18.png'/>
+                </div>
+                <div class="rotate_box_19 rotate_box ab hide">
+                    <img class='ab' src='img/car_360_2/19.png'/>
+                </div>
+                <div class="rotate_box_20 rotate_box ab hide">
+                    <img class='ab' src='img/car_360_2/20.png'/>
+                </div>
+                <div class="rotate_box_21 rotate_box ab hide">
+                    <img class='ab' src='img/car_360_2/21.png'/>
+                </div>
+                <div class="rotate_box_22 rotate_box ab hide">
+                    <img class='ab' src='img/car_360_2/22.png'/>
+                </div>
+                <div class="rotate_box_23 rotate_box ab hide">
+                    <img class='ab' src='img/car_360_2/23.png'/>
+                </div>
+                <div class="rotate_box_24 rotate_box ab hide">
+                    <img class='ab' src='img/car_360_2/24.png'/>
+                </div>
+                <div class="rotate_box_25 rotate_box ab hide">
+                    <img class='ab' src='img/car_360_2/25.png'/>
+                </div>
+                <div class="rotate_box_26 rotate_box ab hide">
+                    <img class='ab' src='img/car_360_2/26.png'/>
+                </div>
+                <div class="rotate_box_27 rotate_box ab hide">
+                    <img class='ab' src='img/car_360_2/27.png'/>
+                </div>
+                <div class="rotate_box_28 rotate_box ab hide">
+                    <img class='ab' src='img/car_360_2/28.png'/>
+                </div>
+                <div class="rotate_box_29 rotate_box ab hide">
+                    <img class='ab' src='img/car_360_2/29.png'/>
+                </div>
+                <div class="rotate_box_30 rotate_box ab hide">
+                    <img class='ab' src='img/car_360_2/30.png'/>
+                </div>
+                <div class="rotate_box_31 rotate_box ab hide">
+                    <img class='ab' src='img/car_360_2/31.png'/>
+                </div>
+                <div class="rotate_box_32 rotate_box ab hide">
+                    <img class='ab' src='img/car_360_2/32.png'/>
+                </div>
+                <div class="rotate_box_33 rotate_box ab hide">
+                    <img class='ab' src='img/car_360_2/33.png'/>
+                </div>
+                <div class="rotate_box_34 rotate_box ab hide">
+                    <img class='ab' src='img/car_360_2/34.png'/>
+                </div>
+                <div class="rotate_box_35 rotate_box ab hide">
+                    <img class='ab' src='img/car_360_2/35.png'/>
+                </div>
+                <div class="rotate_box_36 rotate_box ab hide">
+                    <img class='ab' src='img/car_360_2/36.png'/>
+                </div>
+                <div class="rotate_box_37 rotate_box ab hide">
+                    <img class='ab' src='img/car_360_2/37.png'/>
+                </div>
+                <div class="rotate_box_38 rotate_box ab hide">
+                    <img class='ab' src='img/car_360_2/38.png'/>
+                </div>
+                <div class="rotate_box_39 rotate_box ab hide">
+                    <img class='ab' src='img/car_360_2/39.png'/>
+                </div>
+                <div class="rotate_box_40 rotate_box ab hide">
+                    <img class='ab' src='img/car_360_2/40.png'/>
+                </div>
+                <div class="rotate_box_41 rotate_box ab hide">
+                    <img class='ab' src='img/car_360_2/41.png'/>
+                </div>
+                <div class="rotate_box_42 rotate_box ab hide">
+                    <img class='ab' src='img/car_360_2/42.png'/>
+                </div>
+                <div class="rotate_box_43 rotate_box ab hide">
+                    <img class='ab' src='img/car_360_2/43.png'/>
+                </div>
+                <div class="rotate_box_44 rotate_box ab hide">
+                    <img class='ab' src='img/car_360_2/44.png'/>
+                </div>
+                <div class="rotate_box_45 rotate_box ab hide">
+                    <img class='ab' src='img/car_360_2/45.png'/>
+                </div>
+                <div class="rotate_box_46 rotate_box ab hide">
+                    <img class='ab' src='img/car_360_2/46.png'/>
+                </div>
+                <div class="rotate_box_47 rotate_box ab hide">
+                    <img class='ab' src='img/car_360_2/47.png'/>
+                </div>
+                <div class="rotate_box_48 rotate_box ab hide">
+                    <img class='ab' src='img/car_360_2/48.png'/>
+                </div>
+                <div class="rotate_box_49 rotate_box ab hide">
+                    <img class='ab' src='img/car_360_2/49.png'/>
+                </div>
+                <div class="rotate_box_50 rotate_box ab hide">
+                    <img class='ab' src='img/car_360_2/50.png'/>
+                </div>
+            </div>
+            <div class=" p1_num1 pub_num fadeIn1s ab " data-num="5">
+                <img class="star1 ab" src="img/p2/quan.png" alt=""/>
+                <img class="star2 ab" src="img/p2/quan.png" alt=""/>
+                <img class="star3 ab" src="img/p2/quan.png" alt=""/>
+                <img class="ab" src="img/p1/1.png" alt=""/>
+            </div>
+            <div class=" p1_num2 pub_num fadeIn1s ab " data-num="0">
+                <img class="star1 ab" src="img/p2/quan.png" alt=""/>
+                <img class="star2 ab" src="img/p2/quan.png" alt=""/>
+                <img class="star3 ab" src="img/p2/quan.png" alt=""/>
+                <img class="ab" src="img/p1/2.png" alt=""/>
+            </div>
+            <div class=" p1_num3 pub_num fadeIn1s ab " data-num="1">
+                <img class="star1 ab" src="img/p2/quan.png" alt=""/>
+                <img class="star2 ab" src="img/p2/quan.png" alt=""/>
+                <img class="star3 ab" src="img/p2/quan.png" alt=""/>
+                <img class="ab" src="img/p1/3.png" alt=""/>
+            </div>
+            <div class=" p1_num4 pub_num fadeIn1s ab " data-num="2">
+                <img class="star1 ab" src="img/p2/quan.png" alt=""/>
+                <img class="star2 ab" src="img/p2/quan.png" alt=""/>
+                <img class="star3 ab" src="img/p2/quan.png" alt=""/>
+                <img class="ab" src="img/p1/4.png" alt=""/>
+            </div>
+            <div class=" p1_num5 pub_num fadeIn1s ab " data-num="4">
+                <img class="star1 ab" src="img/p2/quan.png" alt=""/>
+                <img class="star2 ab" src="img/p2/quan.png" alt=""/>
+                <img class="star3 ab" src="img/p2/quan.png" alt=""/>
+                <img class="ab" src="img/p1/5.png" alt=""/>
+            </div>
+            <div class=" p1_num6 pub_num fadeIn1s ab " data-num="6">
+                <img class="star1 ab" src="img/p2/quan.png" alt=""/>
+                <img class="star2 ab" src="img/p2/quan.png" alt=""/>
+                <img class="star3 ab" src="img/p2/quan.png" alt=""/>
+                <img class="ab" src="img/p1/6.png" alt=""/>
+            </div>
+            <div class=" p1_num7 pub_num fadeIn1s ab " data-num="3">
+                <img class="star1 ab" src="img/p2/quan.png" alt=""/>
+                <img class="star2 ab" src="img/p2/quan.png" alt=""/>
+                <img class="star3 ab" src="img/p2/quan.png" alt=""/>
+                <img class="ab" src="img/p1/7.png" alt=""/>
+            </div>
+            <div>
+                <!--无钥匙-->
+                <div class="layer_0 layer ab hide">
+                    <img class="ab" src="img/p1/01.jpg" alt=""/>
+                    <img class="ab p1_delete" src="img/p1/delete.png" alt=""/>
+                </div>
+                <!--车窗后视镜-->
+                <div class="layer_1 layer ab hide">
+                    <img class="ab" src="img/p1/02.jpg" alt=""/>
+                    <img class="ab p1_delete" src="img/p1/delete.png" alt=""/>
+                </div>
+                <!--车身系统-->
+                <div class="layer_2 layer ab hide">
+                    <img class="ab" src="img/p1/03.jpg" alt=""/>
+                    <img class="ab p1_delete" src="img/p1/delete.png" alt=""/>
+                </div>
+                <!--轮胎-->
+                <div class="layer_3 layer ab hide">
+                    <img class="ab" src="img/p1/04.jpg" alt=""/>
+                    <img class="ab p1_delete" src="img/p1/delete.png" alt=""/>
+                </div>
+                <!--邮箱-->
+                <div class="layer_4 layer ab hide">
+                    <img class="ab" src="img/p1/05.jpg" alt=""/>
+                    <img class="ab p1_delete" src="img/p1/delete.png" alt=""/>
+                </div>
+                <!--发动机-->
+                <div class="layer_5 layer ab hide">
+                    <img class="ab" src="img/p1/06.jpg" alt=""/>
+                    <img class="ab p1_delete" src="img/p1/delete.png" alt=""/>
+                </div>
+                <!--ST-->
+                <div class="layer_6 layer ab hide">
+                    <img class="ab" src="img/p1/07.jpg" alt=""/>
+                    <img class="ab p1_delete" src="img/p1/delete.png" alt=""/>
+                </div>
+
+                <div class="layer_7 layer ab hide">
+
+                    <img class="ab " src="img/p1/words1.jpg" alt=""/>
+
+
+                    <img class="ab p1_delete" src="img/p1/delete.png" alt=""/>
+                </div>
+            </div>
+            <div class="prompt prompt1 ab page">
+                <img class="prompt1_btn ab" src="img/p0/p1_btn.png" alt=""/>
+                <img class="prompt1_btn1 ab" src="img/p0/p1_btn2.png" alt=""/>
+                <img class="prompt1_360 ab" src="img/p0/p1_360.png" alt=""/>
+                <img class="prompt1_color ab" src="img/p0/p1_color.png" alt=""/>
+                <img class="prompt_hand prompt1_hand x_x ab" src="img/p0/hand.png" alt=""/>
+            </div>
+
+        </div>
+        <!--内饰-->
+        <div class="p2 ab page page_z link2  hide">
+            <div class="music-ico  fadeIn1s">
+                <div class="music-ico0 music-ico2">
+                    <img class="ab " src="img/media/sound/1.png" alt=""/>
+                    <img class="ab hide" src="img/media/sound/2.png" alt=""/>
+                    <img class="ab hide" src="img/media/sound/3.png" alt=""/>
+                    <img class="ab hide" src="img/media/sound/4.png" alt=""/>
+                </div>
+                <img class="ab hide close" src="img/media/sound/5.png" alt=""/>
+            </div>
+
+            <div class="ab page ">
+                <img class="ab p2_img2" src="img/p2/01.jpg" alt=""/>
+                <img class="ab p2_img2 hide" src="img/p2/02.jpg" alt=""/>
+                <img class="ab p2_img2 hide" src="img/p2/03.jpg" alt=""/>
+                <img class="ab p2_img2 hide" src="img/p2/04.jpg" alt=""/>
+                <img class="ab p2_img2 hide" src="img/p2/05.jpg" alt=""/>
+            </div>
+            <img class="ab p2_words1 fadeIn2s" src="img/p2/06.png" alt=""/>
+            <div class=" p2_bottom ab fadeIn2s">
+               <!-- <img class="star1 ab" src="img/p2/quan.png" alt=""/>
+                <img class="star2 ab" src="img/p2/quan.png" alt=""/>
+                <img class="star3 ab" src="img/p2/quan.png" alt=""/>-->
+                <img class="ab bigTosmall" src="img/p2/yuan.png" alt=""/>
+                <img class="ab p2_words_2" src="img/p2/words2.png" alt=""/>
+            </div>
+            <div class="ab  page_hidden_box" style="z-index:100">
+                <div class="ab hidden page_hidden">
+                    <div>
+                        <img class="ab hidden_img p2_img1" src="img/p2/1.jpg" alt=""/>
+                        <img class="ab hidden_img p2_img1 hide" src="img/p2/2.jpg" alt=""/>
+                        <img class="ab hidden_img p2_img1 hide" src="img/p2/3.jpg" alt=""/>
+                        <img class="ab hidden_img p2_img1 hide" src="img/p2/4.jpg" alt=""/>
+                    </div>
+                    <div class=" p2_top ab fadeIn2s">
+                       <!-- <img class="star1 ab" src="img/p2/quan.png" alt=""/>
+                        <img class="star2 ab" src="img/p2/quan.png" alt=""/>
+                        <img class="star3 ab" src="img/p2/quan.png" alt=""/>-->
+                        <img class="ab bigTosmall" src="img/p2/yuan.png" alt=""/>
+                        <img class="ab p2_words_1" src="img/p2/words1.png" alt=""/>
+                    </div>
+                    <img class="ab p2_words2 fadeIn2s" src="img/p2/5.png" alt=""/>
+
+                </div>
+                <img class="ab move_line" src="img/move_line.png" alt=""/>
+                <div class="ab touch_move">
+                    <img src="img/touch_move.png" alt=""/>
+                </div>
+            </div>
+            <div class="prompt prompt2 ab page">
+                <img class="prompt_left_right prompt2_left_right ab" src="img/p0/left_right.png" alt=""/>
+                <img class="prompt_words prompt2_words ab" src="img/p0/words.png" alt=""/>
+                <img class="prompt_hand prompt2_hand  x_x1 ab" src="img/p0/hand.png" alt=""/>
+            </div>
+        </div>
+        <!--娱乐-->
+        <div class="p3 ab page page_z link3  hide">
+            <div class="music-ico  fadeIn1s">
+                <div class="music-ico0 music-ico3">
+                    <img class="ab " src="img/media/sound/1.png" alt=""/>
+                    <img class="ab hide" src="img/media/sound/2.png" alt=""/>
+                    <img class="ab hide" src="img/media/sound/3.png" alt=""/>
+                    <img class="ab hide" src="img/media/sound/4.png" alt=""/>
+                </div>
+                <img class="ab hide close" src="img/media/sound/5.png" alt=""/>
+            </div>
+            <div class="ab page ">
+                <img class="ab" src="img/p3/1.jpg" alt=""/>
+            </div>
+            <div class="ab  page_hidden_box">
+                <div class="ab hidden page_hidden">
+                    <img class="ab hidden_img" src="img/p3/2.jpg" alt=""/>
+                    <img class="ab p3_words fadeIn2s" src="img/p3/3.png" alt=""/>
+                    <img class="ab move_line" src="img/move_line.png" alt=""/>
+                </div>
+                <div class="ab touch_move">
+                    <img src="img/touch_move.png" alt=""/>
+                </div>
+            </div>
+            <div class="prompt prompt2 ab page">
+                <img class="prompt_left_right prompt2_left_right ab" src="img/p0/left_right.png" alt=""/>
+                <img class="prompt_words prompt2_words ab" src="img/p0/words.png" alt=""/>
+                <img class="prompt_hand prompt2_hand  x_x1 ab" src="img/p0/hand.png" alt=""/>
+            </div>
+        </div>
+        <!--空调-->
+        <div class="p4 ab page page_z link4  hide">
+            <div class="music-ico  fadeIn1s">
+                <div class="music-ico0 music-ico4">
+                    <img class="ab " src="img/media/sound/1.png" alt=""/>
+                    <img class="ab hide" src="img/media/sound/2.png" alt=""/>
+                    <img class="ab hide" src="img/media/sound/3.png" alt=""/>
+                    <img class="ab hide" src="img/media/sound/4.png" alt=""/>
+                </div>
+                <img class="ab hide close" src="img/media/sound/5.png" alt=""/>
+            </div>
+            <div class="ab page ">
+                <img class="ab" src="img/p4/1.jpg" alt=""/>
+            </div>
+
+            <div class=" p4_bottom ab fadeIn2s">
+                <img class="ab bigTosmall" src="img/p2/yuan.png" alt=""/>
+                <img class="ab p4_words_1" src="img/p4/words1.png" alt=""/>
+            </div>
+            <div class="ab  page_hidden_box page_hidden_box1">
+                <div class="ab hidden page_hidden page_hidden1">
+                    <img class="ab hidden_img hidden_img1" src="img/p4/2.jpg" alt=""/>
+                    <img class="ab p4_words fadeIn2s" src="img/p4/3.png" alt=""/>
+                    <img class="ab move_line move_line1" src="img/move_line.png" alt=""/>
+                </div>
+                <div class="ab touch_move touch_move1">
+                    <img src="img/touch_move.png" alt=""/>
+                </div>
+            </div>
+            <div class="prompt prompt2 ab page">
+                <img class="prompt_left_right prompt3_left_right ab" src="img/p0/left_right.png" alt=""/>
+                <img class="prompt_words prompt3_words ab" src="img/p0/words.png" alt=""/>
+                <img class="prompt_hand prompt3_hand  x_x1 ab" src="img/p0/hand.png" alt=""/>
+            </div>
+            <div class="ab p4_pic hide">
+                <img class="ab" src="img/p4/p4_pic.jpg" alt=""/>
+                <img class="ab p1_delete p_delete4" src="img/p1/delete.png" alt=""/>
+            </div>
+
+
+        </div>
+        <!--方向盘-->
+        <div class="p5 ab page page_z link5  hide">
+            <div class="music-ico  fadeIn1s">
+                <div class="music-ico0 music-ico5">
+                    <img class="ab " src="img/media/sound/1.png" alt=""/>
+                    <img class="ab hide" src="img/media/sound/2.png" alt=""/>
+                    <img class="ab hide" src="img/media/sound/3.png" alt=""/>
+                    <img class="ab hide" src="img/media/sound/4.png" alt=""/>
+                </div>
+                <img class="ab hide close" src="img/media/sound/5.png" alt=""/>
+            </div>
+            <div class="ab page ">
+                <img class="ab" src="img/p5/1.jpg" alt=""/>
+            </div>
+            <div class=" p5_bottom ab fadeIn2s">
+                <img class="ab bigTosmall" src="img/p2/yuan.png" alt=""/>
+                <img class="ab p5_words_1" src="img/p5/words.png" alt=""/>
+            </div>
+
+            <div class=" p5_bottom1 ab fadeIn2s">
+                <img class="ab bigTosmall" src="img/p2/yuan.png" alt=""/>
+                <img class="ab p5_words_2" src="img/p5/words1.png" alt=""/>
+            </div>
+
+            <div class="ab  page_hidden_box page_hidden_box1">
+                <div class="ab hidden page_hidden page_hidden1">
+                    <img class="ab hidden_img hidden_img1" src="img/p5/2.jpg" alt=""/>
+                    <img class="ab move_line move_line1" src="img/move_line.png" alt=""/>
+
+                </div>
+                <div class="ab touch_move touch_move1">
+                    <img src="img/touch_move.png" alt=""/>
+                </div>
+            </div>
+            <div class="prompt prompt2 ab page">
+                <img class="prompt_left_right prompt3_left_right ab" src="img/p0/left_right.png" alt=""/>
+                <img class="prompt_words prompt3_words ab" src="img/p0/words.png" alt=""/>
+                <img class="prompt_hand prompt3_hand  x_x1 ab" src="img/p0/hand.png" alt=""/>
+            </div>
+            <div class="ab p5_pic hide">
+                <img class="ab" src="img/p5/p5_pic.jpg" alt=""/>
+                <img class="ab p1_delete p_delete5" src="img/p1/delete.png" alt=""/>
+            </div>
+            <div class="ab p5_pic1 hide">
+                <img class="ab" src="img/p5/p5_pic1.jpg" alt=""/>
+                <img class="ab p1_delete p_delete5_1" src="img/p1/delete.png" alt=""/>
+            </div>
+
+        </div>
+        <!--仪表-->
+        <div class="p6 ab page page_z link6  hide">
+            <div class="music-ico  fadeIn1s">
+                <div class="music-ico0 music-ico6">
+                    <img class="ab " src="img/media/sound/1.png" alt=""/>
+                    <img class="ab hide" src="img/media/sound/2.png" alt=""/>
+                    <img class="ab hide" src="img/media/sound/3.png" alt=""/>
+                    <img class="ab hide" src="img/media/sound/4.png" alt=""/>
+                </div>
+                <img class="ab hide close" src="img/media/sound/5.png" alt=""/>
+            </div>
+            <div class="ab page ">
+                <img class="ab" src="img/p6/1.jpg" alt=""/>
+            </div>
+            <div class="ab  page_hidden_box">
+                <div class="ab hidden page_hidden">
+                    <img class="ab hidden_img" src="img/p6/2.jpg" alt=""/>
+                    <img class="ab p6_words fadeIn2s" src="img/p6/3.png" alt=""/>
+                    <img class="ab move_line" src="img/move_line.png" alt=""/>
+                </div>
+                <div class="ab touch_move">
+                    <img src="img/touch_move.png" alt=""/>
+                </div>
+            </div>
+
+            <div class="prompt prompt2 ab page">
+                <img class="prompt_left_right prompt2_left_right ab" src="img/p0/left_right.png" alt=""/>
+                <img class="prompt_words prompt2_words ab" src="img/p0/words.png" alt=""/>
+                <img class="prompt_hand prompt2_hand  x_x1 ab" src="img/p0/hand.png" alt=""/>
+            </div>
+        </div>
+        <!--道路救援-->
+        <div class="p7 ab page page_z link7  page_bg7 hide">
+            <div class="music-ico  fadeIn1s">
+                <div class="music-ico0 music-ico7">
+                    <img class="ab " src="img/media/sound/1.png" alt=""/>
+                    <img class="ab hide" src="img/media/sound/2.png" alt=""/>
+                    <img class="ab hide" src="img/media/sound/3.png" alt=""/>
+                    <img class="ab hide" src="img/media/sound/4.png" alt=""/>
+                </div>
+                <img class="ab hide close" src="img/media/sound/5.png" alt=""/>
+            </div>
+
+            <div class="swiper-container swiper-container2 page  animated fadeIn1s  ">
+                <div class="swiper-wrapper p7_swiper">
+                    <div class="swiper-slide p7_img">
+                        <img class="ab p7_img " src="img/p7/1.jpg" alt=""/>
+                    </div>
+                    <div class="swiper-slide p7_img">
+                        <img class="ab p7_img " src="img/p7/2.jpg" alt=""/>
+                    </div>
+                    <div class="swiper-slide p7_img">
+                        <img class="ab p7_img " src="img/p7/3.jpg" alt=""/>
+                    </div>
+                </div>
+                <div class="swiper-button-prev p7_swiper-btn fadeIn_x1 hide">
+                    <img src="img/p7/left.png" alt=""/>
+                </div>
+                <div class="swiper-button-next p7_swiper-btn fadeIn_x ">
+                    <img src="img/p7/right.png" alt=""/>
+                </div>
+            </div>
+
+
+
+
+        </div>
+    </div>
+
+</div>
+
+
+
+<script>
+    var urlPrefix='http://chrysler.dzing.com.cn/znz';//更换部署时，请将该url换成相应的url
+</script>
+<script src="js/zepto.min.js"></script>
+<script src="js/touch.js"></script>
+<script src="js/swiper.min.js"></script>
+<script src="js/rem.js"></script>
+<script src="js/preloadjs-0.6.2.min.js"></script>
+<script src="js/event.js"></script>
+<script src="js/fx.js"></script>
+<script src="js/main.js?v=2016.12.29"></script>
+<script src="js/soundjs-0.6.2.min.js"></script>
+<script src="js/jweixin-1.0.0.js"></script>
+<script src="js/share.js"></script>
+</body>
+</html>
