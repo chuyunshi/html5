@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=0,minimum-scale=1.0,maximum-scale=1.0,minimal-ui" />
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <title>中华</title>
+    <link rel="stylesheet" href="css/main.css"/>
+    <link rel="stylesheet" href="css/animate.min.css"/>
+
+
+</head>
+
+<body class="hidden">
+<div class="music-ico"></div>
+<audio preload id="bgm" class="bgm"  loop="loop">
+    <source src="img/sound/bgm.mp3" type="audio/mpeg">
+</audio>
+<audio preload  class="bgm">
+    <source src="img/sound/bgm1.mp3" type="audio/mpeg">
+</audio>
+<div id="errorScreen">
+    <div class="re">
+        <div class="font">
+            <img src="img/turn.gif">
+            <p>请将手机调至竖屏状态...</p>
+        </div>
+    </div>
+</div>
+<div class="loading">
+    <div class="load_num ab">
+        <span class="loading_num">0</span><span>%</span>
+    </div>
+    <div class="load_box1 ab">
+        <div class="load_box2 ab"></div>
+    </div>
+</div>
+<div class="page hide">
+    <div class="p0 re ab">
+        <div class="ab title">
+            <img src="img/p0/title.png" alt=""/>
+        </div>
+        <div class="ab zhonghua">
+            <img src="img/p0/zhonghua.png" alt=""/>
+        </div>
+        <div >
+            <img class="ab p0_right" src="img/p0/right.png" alt=""/>
+        </div>
+        <div class="oldphone ab">
+            <img src="img/p0/w.png" class="w ab">
+            <img src="img/p0/n.png" class="n ab">
+        </div>
+        <span class="ab num_year">
+            <img src="img/p0/1.png" alt=""/>
+        </span>
+        <span class="ab logo">
+            <img src="img/p0/logo.png" alt=""/>
+        </span>
+        <span>
+            <img class="ab arrow1" src="img/p0/arrow.png" alt=""/>
+        </span>
+
+        <div class="year year1 year_5 ab" data-num="5">
+            <img src="img/p0/2010.png" alt=""/></div>
+        <div class="year year2 year_6 ab" data-num="6">
+            <img src="img/p0/2012.png" alt=""/></div>
+        <div class="year year3 year_1 ab" data-num="1">
+            <img src="img/p0/1949.png" alt=""/></div>
+        <div class="year year4 year_2 ab" data-num="2">
+            <img src="img/p0/1951.png" alt=""/></div>
+        <div class="year year5 year_3 ab" data-num="3">
+            <img src="img/p0/1983.png" alt=""/></div>
+        <div class="year year6 year_4 ab" data-num="4">
+            <img src="img/p0/1988.png" alt=""/></div>
+        <div class="year year7 year_5 ab" data-num="5">
+            <img src="img/p0/2010.png" alt=""/></div>
+        <div class="year year8 year_6 ab" data-num="6">
+            <img src="img/p0/2012.png" alt=""/></div>
+        <div class="year year9 year_1 ab" data-num="1">
+            <img src="img/p0/1949.png" alt=""/></div>
+        <div class="year year10 year_2 ab" data-num="2">
+            <img src="img/p0/1951.png" alt=""/></div>
+        <div class="year year11 year_3 ab" data-num="3">
+            <img src="img/p0/1983.png" alt=""/></div>
+        <div class="year year12 year_4 ab" data-num="4">
+            <img src="img/p0/1988.png" alt=""/></div>
+    </div>
+    <div class="p1 ab p hide">
+        <div class="ab p1_sun animated fadeIn">
+            <img src="img/p1/sun.png" alt=""/>
+        </div>
+        <div class="ab p1_quan animated  fadeIn">
+            <img src="img/p1/quan.png" alt=""/>
+        </div>
+        <div class="ab p1_quan p1_mao  animated  fadeIn">
+            <img src="img/p1/mao.png" alt=""/>
+        </div>
+        <div class="ab p1_line  animated  fadeIn">
+            <img src="img/p1/line.png" alt=""/>
+        </div>
+        <div class="close ab  animated  flipInY">
+            <img src="img/p1/return.png" alt=""/>
+        </div>
+        <div class="ab p1_bottom animated fadeIn">
+            <img src="img/p1/dai.png" alt=""/>
+        </div>
+    </div>
+    <div class="p2 ab p hide">
+
+        <div class="ab p2_line animated bounceInLeft">
+            <img src="img/p2/line.png"/>
+        </div>
+        <div class="ab p2_mao animated fadeInRight">
+            <img src="img/p2/mao.png" alt=""/>
+        </div>
+        <div class="ab p2_yan animated fadeInUp">
+            <img src="img/p2/yan.png" alt=""/>
+        </div>
+
+        <div class="close ab animated  flipInY">
+            <img src="img/p1/return.png" alt=""/>
+        </div>
+
+    </div>
+    <div class="p3 ab p hide">
+        <div class="ab p3_line animated bounceInRight">
+            <img src="img/p3/line.png"/>
+        </div>
+        <div class="ab p3_pic animated fadeInUp">
+            <img src="img/p3/pic.png"/>
+        </div>
+        <div class="close ab animated  flipInY">
+            <img src="img/p1/return.png" alt=""/>
+        </div>
+    </div>
+    <div class="p4 ab p hide ">
+        <div class="ab p4_line animated bounceInDown">
+            <img src="img/p4/line.png"/>
+        </div>
+        <div class="ab p4_yan animated fadeIn">
+            <img src="img/p4/yan.png" alt=""/>
+        </div>
+        <div class="ab p4_pic1 animated fadeInDownBig">
+            <img src="img/p4/pic1.png" alt=""/>
+        </div>
+        <div class="ab p4_pic2 animated fadeInLeft">
+            <img src="img/p4/pic2.png" alt=""/>
+        </div>
+        <div class="ab p4_pic3 animated fadeInRight">
+            <img src="img/p4/pic3.png" alt=""/>
+        </div>
+        <div class="close ab animated  flipInY">
+            <img src="img/p1/return.png" alt=""/>
+        </div>
+    </div>
+    <div class="p5 ab p hide">
+        <div class="ab p5_line animated bounceInUp">
+            <img src="img/p5/line.png"/>
+        </div>
+        <div class="ab p5_pic1 animated fadeIn">
+            <img src="img/p5/pic1.png" alt=""/>
+        </div>
+        <div class="ab p5_pic2 animated fadeIn">
+            <img src="img/p5/pic2.png" alt=""/>
+        </div>
+        <div class="close ab animated  flipInY">
+            <img src="img/p1/return.png" alt=""/>
+        </div>
+    </div>
+    <div class="p6 ab p hide">
+        <div class="ab p6_line animated fadeIn">
+            <img src="img/p6/line.png"/>
+        </div>
+        <div class="ab p6_logo animated fadeInLeft">
+            <img src="img/p6/logo.png" alt=""/>
+        </div>
+        <div class="ab p6_yan animated fadeInRight">
+            <img src="img/p6/yan.png" alt=""/>
+        </div>
+        <div class="ab p6_light animated fadeIn">
+            <img src="img/p6/light.png" alt=""/>
+        </div>
+        <div class="ab p6_xin animated fadeIn">
+            <img src="img/p6/xin.png" alt=""/>
+        </div>
+        <div class="close ab animated  flipInY">
+            <img src="img/p1/return.png" alt=""/>
+        </div>
+    </div>
+
+
+</div>
+</body>
+</html>
+<script>
+    var urlPrefix = 'http://chuyunshi.applinzi.com/zhonghua_11/zhonghua.html';
+</script>
+<script src="js/zepto.js"></script>
+<script src="js/preloadjs-0.6.2.min.js"></script>
+<script src="js/event.js"></script>
+<script src="js/fx.js"></script>
+<script src="js/rem.js"></script>
+<script src="js/main_2.js"></script>

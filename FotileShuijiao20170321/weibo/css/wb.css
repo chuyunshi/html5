@@ -1,0 +1,177 @@
+*{
+    margin:0;
+    padding:0;
+}
+.ab{
+    position: absolute;
+}
+.re{
+    position: relative;
+}
+.hide{
+    display: none;
+}
+.hidden{
+    overflow: hidden;
+}
+body{
+    background: #fff;
+}
+body img{
+    width:100%;
+    height:100%;
+}
+.page{
+    width:auto;
+    height:1080px;
+    background: url("../img/wb/bg.jpg") no-repeat center;
+    background-size: 100% 100%;
+}
+.center{
+    width:710px;
+    height:1080px;
+    left:50%;
+    margin-left: -355px;
+}
+@media screen and (max-width: 710px) {
+    .center{
+        left:0;
+        margin-left: 0;
+    }
+}
+.title{
+    width:710px;
+    height:374px;
+    left:0;
+    top:0;
+}
+.center_center{
+    width:710px;
+    height:323px;
+    left:0;
+    top:374px;
+}
+.video_box{
+    width: 420px;
+    height: 234px;
+    background: #999;
+    left: 10px;
+    top: 44px;
+}
+.bottom{
+    width:710px;
+    height:391px;
+    left:0;
+    bottom:0;
+}
+.btn{
+    width: 69px;
+    height: 25px;
+    left: 402px;
+    top: 172px;
+}
+.words_box{
+    width: 441px;
+    height: 80px;
+    left: 9px;
+    top: 67px;
+    padding:10px;
+}
+.wb_p{
+    font-size: 12px;
+    line-height: 20px;
+}
+.wb_span {
+    color: #3268c0;
+}
+.right{
+    width:141px;
+    height:220px;
+    right:56px;
+    top:30px;
+}
+.wave_box {
+    height: 200px;
+    width: 104px;
+    left: 10px;
+    top: 9px;
+    border-radius: 33px;
+    background: #fff;
+    -webkit-transform:rotate(0deg);
+}
+.canvas_box{
+    width:500px;
+    height:240px;
+    top:200px;
+}
+#canvas1,#canvas2,#canvas3{
+    width:300px;
+    height:240px;
+}
+.right_num{
+    font-size: 24px;
+    left: 45px;
+    top: 128px;
+    color:#fff;
+}
+.right_percent{
+    font-size: 12px;
+    left: 74px;
+    top: 140px;
+    color: #fff;
+}
+.weixin{
+    font-size: 12px;
+    width: 120px;
+    color: #fff;
+    text-align: center;
+    top: 156px;
+    left: -7px;
+    transform: scale(0.8);
+}
+.weibo{
+    font-size: 12px;
+    width: 120px;
+    color: #fff;
+    text-align: center;
+    top: 170px;
+    left: -7px;
+    transform: scale(0.8);
+}
+.p1{
+    font-size: 12px;
+    width: 140px;
+    text-align: center;
+    bottom: -20px;
+    left: -6px;
+}
+.p2{
+    font-size: 12px;
+    width: 160px;
+    text-align: center;
+    bottom: -38px;
+    left: -16px;
+}
+.p1_red{
+    font-size: 16px;
+    color:#c35c5c;
+    font-weight: bolder;
+}
+
+.sanjiao{
+    width: 7px;
+    height: 10px;
+    left: -10px;
+    top: 3px;
+}
+.yiyou_red{
+    font-size: 16px;
+    color:#c35c5c;
+    font-weight: bolder;
+}
+.right_line{
+    width:100px;
+    height:100px;
+    right:-110px;
+    bottom:-81px;;
+}

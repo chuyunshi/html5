@@ -1,0 +1,23 @@
+@-webkit-keyframes rotationZ50 {
+    0% {
+        -webkit-transform: rotateZ(0deg);
+    }
+
+    100% {
+        -webkit-transform: rotateZ(360deg);
+    }
+}
+.playing {-webkit-animation: 222s rotationZ50 linear infinite;}
+.playing1 {-webkit-animation: 2.3s rotationZ50 linear infinite;}
+.playing1-stop {-webkit-animation-play-state: paused;}
+
+@-webkit-keyframes move {
+    0% {
+        -webkit-transform: translateX(0rem) translateY(0rem);
+    }
+
+    100% {
+        -webkit-transform: translateX(-3rem) translateY(0.6rem);
+    }
+}
+.moving {-webkit-animation: 1.2s move linear infinite;}

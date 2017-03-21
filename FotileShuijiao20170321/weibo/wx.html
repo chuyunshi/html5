@@ -1,0 +1,137 @@
+<script>
+    var system ={};
+    var p = navigator.platform;
+    system.win = p.indexOf("Win") == 0;
+    system.mac = p.indexOf("Mac") == 0;
+    system.x11 = (p == "X11") || (p.indexOf("Linux") == 0);
+    if(system.win||system.mac||system.xll){
+        window.location.href="http://wechat.fotile.com/worldwaterday/weibo/";
+    }else{
+
+    }
+</script>
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>我愿#给你我的水#</title>
+    <meta name="format-detection" content="telephone=no">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=0,minimum-scale=1.0,maximum-scale=1.0,minimal-ui" />
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <style>
+        *{
+            margin:0;
+            padding:0;
+        }
+        .ab{
+            position: absolute;
+        }
+        .re{
+            position: relative;
+        }
+        .hide{
+            display: none;
+        }
+        .hidden{
+            overflow: hidden;
+        }
+        body{
+            background: #fff;
+        }
+
+        body img{
+            width:100%;
+            height:100%;
+        }
+        @media screen and (orientation:portrait) {
+            /*  css[竖向定义样式]  */
+            #errorScreen{
+                display: none;}
+        }
+        @media screen and (orientation:landscape) {
+            /*   css[横向定义样式]  */
+            #errorScreen{
+                display: block;}
+        }
+
+        /*横竖屏提示*/
+        #errorScreen {
+            background: url("img/shu.jpg") no-repeat center;
+            background-size:100% 100%;
+            z-index: 10000;
+        }
+        .bg{
+            background: url("img/wx/bg.jpg") no-repeat center;
+            background-size: 100% 100%;
+        }
+        .wx{
+            width:16rem;
+        }
+        .wx1{
+            height:3.1852rem;
+            top:3%;
+        }
+        .wx2{
+            height:1.2296rem;
+            top:50%;
+            margin-top: -8.5rem;
+        }
+        .wx3{
+            height:8.0296rem;
+            top:50%;
+            margin-top: -7rem;
+        }
+        .wx4{
+            height:1.8518rem;
+            top:50%;
+            margin-top: 1.5rem;
+        }
+        .wx5{
+            height:6.4148rem;
+            top:50%;
+            margin-top: 3.5rem;
+        }
+        .wx6{
+            height:1.3926rem;
+            bottom:2%;
+        }
+    </style>
+</head>
+<body>
+<div class="page ab" id="errorScreen"></div>
+<div class="re page bg">
+    <img class="wx1 wx ab" src="img/wx/1.png" alt=""/>
+    <img class="wx2 wx ab" src="img/wx/2.png" alt=""/>
+    <img class="wx3 wx ab" src="img/wx/3.png" alt=""/>
+    <img class="wx4 wx ab" src="img/wx/4.png" alt=""/>
+    <img class="wx5 wx ab" src="img/wx/5.png" alt=""/>
+    <img class="wx6 wx ab" src="img/wx/6.png" alt=""/>
+</div>
+
+
+
+</body>
+<script src="js/zepto.min.1.js"></script>
+<script src="js/rem.js"></script>
+<script>
+    $(document).ready(function() {
+        var pageH, pageW;
+        page = {
+            init: function() {
+                $(window).resize(function() {
+                    page.resize();
+                });
+                page.resize();
+
+            },
+            resize: function() {
+                pageH = $(window).height();
+                pageW = $(window).width();
+                $(".page").width(pageW).height(pageH);
+            }
+        };
+        page.init();
+    });
+</script>
+</html>

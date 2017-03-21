@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html>
+
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>我愿#给你我的水#</title>
+    <meta name="format-detection" content="telephone=no">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=0,minimum-scale=1.0,maximum-scale=1.0,minimal-ui" />
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="stylesheet" href="css/main.css?v=20170317" />
+    <link rel="stylesheet" href="css/animate.min.css" />
+    <link rel="stylesheet" href="css/my_animate.css?v=20170317" />
+    <script>
+        _code = "";
+        _shareName = '水槽 先碗机';
+        _num = 1;
+        _index = 2;
+        _video = 1;
+        _post = 0;
+    </script>
+    <script src="http://cdn.webfont.youziku.com/wwwroot/js/wf/youziku.client.min.js"></script>
+</head>
+
+<body>
+<div class="page ab" id="errorScreen"></div>
+<audio preload id="bgm" class="bgm">
+    <source src="img/bgm.mp3" type="audio/mpeg">
+</audio>
+<audio preload id="die" class="die">
+    <source src="img/die.mp3" type="audio/mpeg">
+</audio>
+<div class="ab page loading hidden">
+    <div class="ab panzi1 ">
+        <img class="ab " src="img/p0/1.png" alt="" />
+    </div>
+    <div class="ab panzi2">
+        <img src="img/p0/2.png" alt="" />
+    </div>
+    <div class="ab panzi3">
+        <img src="img/p0/3.png" alt="" />
+    </div>
+</div>
+<div class="ab page hidden p1 hide">
+    <div class="ab rem ">
+        <img src="img/p1/bg.jpg" alt="" />
+    </div>
+    <div class="ab words_input">
+        <img class="ab" src="img/p1/0.png" alt="" />
+        <div class="ab cd">
+            <img src="img/p1/3.png" alt="" />
+        </div>
+        <img class="ab" src="img/p1/1.png" alt="" />
+        <img class="ab right_bottom" src="img/p1/8.png" alt=""/>
+        <div class="ab red_line"></div>
+        <div class=" ab  my">
+            <img class="ab my1" src="img/p1/6.png" alt="" />
+            <img class="ab my2 hide" src="img/p1/7.png" alt="" />
+        </div>
+        <span id="zzz" class="wdxzh ab _color zzz hidden " style="font-family: AR-NewHeiGB-U"></span>
+        <input class="ab _color _input "  id="test" type="text" onfocus="page.p1.focus()" onblur="page.p1.blur()" maxlength="" placeholder="输入带”氵”或”冫”的姓名或家乡地名" />
+        <div class="ab words_center">
+            <img src="img/p1/5.png" alt="" />
+        </div>
+    </div>
+    <div class="ab p1_btn">
+        <img src="img/p1/2.png" alt="" />
+    </div>
+    <div class="ab p1_bottom hide">
+        <img src="img/p1/4.png" alt="" />
+    </div>
+    <canvas class="ab hide canvas_pub" id="c0"></canvas>
+    <canvas class="ab hide canvas_pub" id="c1"></canvas>
+    <div class="ab page p1_popup hide">
+        <img class="ab animated fadeIn hide" data-num="1" src="img/popup/1.png" alt="" />
+        <img class="ab animated fadeIn hide" data-num="2" src="img/popup/2.png" alt="" />
+        <img class="ab animated fadeIn hide" data-num="3" src="img/popup/3.png" alt="" />
+        <img class="ab animated fadeIn hide" data-num="4" src="img/popup/5.png" alt="" />
+        <img class="ab animated fadeIn hide" data-num="5" src="img/popup/6.png" alt="" />
+    </div>
+</div>
+<div class="ab page hidden p2 hide">
+    <div class="ab logo animated fadeIn">
+        <img src="img/p2/logo.png" alt="" />
+    </div>
+    <div class="ab p2_bg_move ">
+        <img class="ab p2_move_1" src="img/p2/1.png" alt="" />
+        <img class="ab p2_move_2" src="img/p2/2.png" alt="" />
+        <img class="ab p2_move_3" src="img/p2/3.png" alt="" />
+    </div>
+    <div class="ab p2_center animated fadeIn hide">
+        <img src="img/p2/4.png" alt="" />
+    </div>
+    <canvas class="ab" id="p2_canvas"></canvas>
+    <div class="ab p2_logo2 animated fadeIn hide">
+        <img src="img/p2/14.png" alt="" />
+    </div>
+    <div class=" p2_btn hide">
+        <img class="ab btn_9 animated fadeIn" style="left:5.15rem;" src="img/p2/9.png" alt="" />
+    </div>
+</div>
+<div class="ab page p3  hide">
+    <div class="fx page hidden p3_3">
+        <div class="fx logo">
+            <img src="img/p2/logo.png" alt="" />
+        </div>
+        <div class="ab p3_bg_move">
+            <img class="ab p3_move_1" src="img/p3/1.png" alt="" />
+            <img class="ab p3_move_2" src="img/p3/2.png" alt="" />
+            <img class="ab p3_move_3" src="img/p3/3.png" alt="" />
+        </div>
+    </div>
+    <div class="ab p3_give" style="top:5rem;">
+        <img src="img/p3/0.png" alt="" />
+    </div>
+    <div class="ab" style="top:8rem;">
+        <p style="width:16rem;text-align: center;font-size: 0.6rem;">目前已有</p>
+        <p  style="width:16rem;text-align: center;font-size: 0.9rem; line-height:1.5rem;color:#b93232;"><span class="p3_p">0</span><span style="font-size:0.5rem;color:#000;"> 位</span></p>
+        <p style="width:16rem;text-align: center;font-size: 0.6rem; ">爱心“音乐人”参与活动</p>
+    </div>
+    <div class="ab p3_100W hide">
+        <img src="img/p3/16.png" alt="" />
+    </div>
+    <div class="ab  percent hide">
+        <img class="ab p3_img" src="img/p3/4.png" alt="" />
+        <div class="ab box hidden">
+            <div class="ab canvas_box">
+                <!--控制波浪百分比-->
+                <canvas class="ab" id="canvas1"></canvas>
+                <canvas class="ab" id="canvas2"></canvas>
+                <canvas class="ab" id="canvas3"></canvas>
+            </div>
+            <div class="ab tizi">
+                <img src="img/p3/5.png" alt="" />
+            </div>
+            <div class="ab p3_percent"> <span id="_active_percent">00</span>
+                <span class="p3_percent_1">%</span>
+            </div>
+            <p class="font0 eee ab wx">微信用户 <span id="p3_wx">123213</span> 位</p>
+            <p class="font0 eee ab wb">微博用户 <span id="p3_wb">123443</span> 位</p>
+        </div>
+    </div>
+    <div class="ab p3_line hide">
+        <img src="img/p3/6.png" alt="" />
+        <div class="ab p3_already">
+            <img class="ab already_left_img" src="img/p3/7.png" alt="" />
+            <p class="font1">已有</p>
+            <p class="red font2" id="_active_num">0</p>
+            <p class="font1">音乐人参与</p>
+        </div>
+    </div>
+    <div class="ab p3_lack hide">
+        <p class="font1">还需 <span class="font2 red " id="_other_num">1000000</span> 人参与</p>
+        <p class="font2 p3_lack_words">即可向缺水地区捐献母亲水窖</p>
+    </div>
+    <div class="ab p3_btn hide">
+        <img src="img/p3/8.png" alt="" />
+    </div>
+    <div class="ab p3_list_title" style="top:14rem;">
+        <img src="img/p3/9.png" alt="" />
+    </div>
+    <div class="ab content" style="top:16rem;">
+        <ul class="list_ul" id="userList"></ul>
+        <div class="weui-loadmore" id="loadMore" style="display: none;"> <i class="weui-loading"></i>
+            <span class="weui-loadmore__tips">正在加载</span>
+        </div>
+    </div>
+</div>
+<div class="ab page video hidden hide">
+    <video class="ab" poster="img/video/14.jpg" id="video0"  playsinline webkit-playsinline="true" x5-video-player-type="h5" x-video-player-fullscreen="true" x-webkit-airplay="true">
+        <source src="img/media/ft0.mp4?v=201703171" />
+    </video>
+    <video class="ab" poster="img/video/14.jpg" id="video1"  playsinline webkit-playsinline="true" x5-video-player-type="h5" x-video-player-fullscreen="true" x-webkit-airplay="true">
+        <source src="img/media/ft1.mp4?v=201703171" />
+    </video>
+    <video class="ab" poster="img/video/14.jpg" id="video2"  playsinline webkit-playsinline="true" x5-video-player-type="h5" x-video-player-fullscreen="true" x-webkit-airplay="true">
+        <source src="img/media/ft2.mp4?v=201703171" />
+    </video>
+    <div class="ab video_top animated fadeIn hide">
+        <span class="wdxzh  _color woshi " style="font-family: AR-NewHeiGB-U">我是</span>
+        <span id="zzzz" class="wdxzh  _color video_name" style="font-family: AR-NewHeiGB-U">张 水 皮</span>
+        <img class="ab video_top_1" src="img/video/4.png" alt="" />
+    </div>
+    <div class="ab video_control animated fadeIn hide">
+        <img class="ab " src="img/video/7.png" alt="" />
+        <div class="ab jindutiao_big_box hidden">
+            <div class="ab jindutiao">
+                <div class="ab jindutiao_box">
+                    <img class="ab jindu_left" src="img/video/8.png" alt="" />
+                    <img class="ab jindu_move" src="img/video/9.png" alt="" />
+                </div>
+            </div>
+        </div> <span class="ab s_m_s">
+
+            <span class="s_m">00</span>:<span class="s_s">00</span>
+            </span> <span class="ab e_m_s">
+
+            <span class="e_m">02</span>:<span class="e_s">03</span>
+            </span>
+        <div class="ab video_btn">
+            <img class="ab video_open" src="img/video/2.png" alt="" />
+            <img class="ab video_close hide" src="img/video/6.png" alt="" />
+        </div>
+        <img class="ab video_btn_other hide" src="img/video/3.png" alt="" />
+        <img class="ab video_btn_10 " style="left:10rem;bottom:0.8rem;" src="img/video/11.png" alt="" />
+    </div>
+
+    <div class="ab video_first_btn">
+        <div class="ab video_cd animated fadeInDown">
+            <img class="ab video_cd_img" src="img/p1/3.png" alt=""/>
+        </div>
+        <div class="hand_box animated fadeIn">
+            <img class="ab video_line " src="img/video/12.png" alt=""/>
+            <img class="ab video_hand moving" src="img/video/13.png" alt=""/>
+        </div>
+    </div>
+
+    <div class="ab video_center animated fadeIn">
+        <img src="img/video/14.png" alt=""/>
+    </div>
+</div>
+
+<div class="fx page pub_popup hide animated fadeIn hide">
+    <img class="ab" src="img/popup/4.png" alt="" />
+    <img class="ab hide" src="img/popup/7.png" alt="" />
+</div>
+<script src="js/zepto.min.1.js"></script>
+<script src="js/event.js"></script>
+<script src="js/fx.js"></script>
+<script src="js/createjs-2015.11.26.min.js"></script>
+<script src="js/rem.js"></script>
+<script src="js/jweixin-1.0.0.js"></script>
+<script src="js/share.js?v=201703171"></script>
+<script src="js/touch.js"></script>
+<script src="js/wechat.js?v=20170318"></script>
+</body>
+</html>
