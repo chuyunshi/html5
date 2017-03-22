@@ -17,13 +17,13 @@ if(_post==0){
 
 var sharedata = {
     title: _title+_title_right,
-    link: 'http://wechat.fotile.com/2017awe/FotileShuijiao320/share.html?temp=' + _shareName + "&num=" + _num + "&index=" + _index + "&video=" + _video,
-    img: 'http://wechat.fotile.com/2017awe/FotileShuijiao320/img/share.jpg',
+    link: 'http://wechat.fotile.com/worldwaterday/share.html?temp=' + _shareName + "&num=" + _num + "&index=" + _index + "&video=" + _video,
+    img: 'http://wechat.fotile.com/worldwaterday/img/share.jpg',
 }
 var sharedata1 = {
     title: _title,
-    link: 'http://wechat.fotile.com/2017awe/FotileShuijiao320/share.html?temp=' + _shareName + "&num=" + _num + "&index=" + _index + "&video=" + _video,
-    img: 'http://wechat.fotile.com/2017awe/FotileShuijiao320/img/share.jpg',
+    link: 'http://wechat.fotile.com/worldwaterday/share.html?temp=' + _shareName + "&num=" + _num + "&index=" + _index + "&video=" + _video,
+    img: 'http://wechat.fotile.com/worldwaterday/img/share.jpg',
     desc: '歌曲分享自FOTILE Music',
 }
 wxcallback(sharedata);
