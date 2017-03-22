@@ -1,0 +1,70 @@
+<script>
+    var system ={};
+    var p = navigator.platform;
+    system.win = p.indexOf("Win") == 0;
+    system.mac = p.indexOf("Mac") == 0;
+    system.x11 = (p == "X11") || (p.indexOf("Linux") == 0);
+    if(system.win||system.mac||system.xll){
+    }else{
+        window.location.href="http://wechat.fotile.com/worldwaterday/weibo/wx.html";
+    }
+</script>
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>我愿#给你我的水#</title>
+    <link rel="stylesheet" href="css/wb.css"/>
+</head>
+<body>
+<div class="re page">
+    <div class="ab center">
+        <div class="ab title">
+            <img src="img/wb/title.png" alt=""/>
+        </div>
+        <div class="ab center_center">
+            <img src="img/wb/center.png" alt=""/>
+            <div class="ab video_box">
+                <iframe frameborder="0" width="420" height="234" src="https://v.qq.com/iframe/player.html?vid=a0385ipy4te&tiny=0&auto=0" allowfullscreen></iframe>
+            </div>
+        </div>
+        <div class="ab bottom">
+            <img src="img/wb/bottom.png" alt=""/>
+            <div class="ab words_box">
+                <p class="wb_p">
+                    世界水日，请叫我上每（mei）日报。我愿响应方太水槽“先”碗机的号召，捐出名字中的“氵”或“冫”，把“海阔天空”的水送给缺水地区。参与<span class="wb_span">#给你我的水#</span>，募集100万个名字。方太就将出资捐建母亲水窖。最后我想提名<span class="wb_span">@名中有水的好友1 @名中有水的好友2 @名中有水的好友3</span>，一起来！
+                </p>
+            </div>
+            <div class="ab btn">
+
+            </div>
+            <div class="ab right">
+                <div class="ab wave_box hidden">
+                    <div class="ab canvas_box">
+                        <canvas class="ab" id="canvas1"></canvas>
+                        <canvas class="ab" id="canvas2"></canvas>
+                        <canvas class="ab" id="canvas3"></canvas>
+                    </div>
+                    <span class="ab right_num">00</span><span class="ab right_percent">%</span>
+                    <p class="ab weixin">微信用户 <span class="wx"></span> 位</p>
+                    <p class="ab weibo">微博用户 <span class="wb"></span> 位</p>
+                </div>
+                <p class="ab p1 ">还需 <span class="p1_red"></span> 人参与</p>
+                <p class="ab p2 ">即可向缺水地区捐献母亲水窖</p>
+                <img class="ab" src="img/wb/right.png" alt=""/>
+                <div class="ab right_line">
+                    <img class="ab sanjiao" src="img/wb/7.png" alt=""/>
+                    <p>已有</p>
+                    <p class="yiyou_red"></p>
+                    <p>音乐人参与</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+</body>
+<script src="js/zepto.min.1.js"></script>
+<script src="js/createjs-2015.11.26.min.js"></script>
+<script src="js/wb.js"></script>
+</html>
