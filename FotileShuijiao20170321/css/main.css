@@ -300,21 +300,30 @@ canvas{
     -webkit-animation-duration: 1s!important;
     -webkit-animation-delay: 0s!important;
 }
+.btn_8{
+    width:5.0074rem;
+    height:1.9704rem;
+    bottom:8%;
+    left:0.5rem;
+    z-index: 10;
+    -webkit-animation-duration: 1s!important;
+    -webkit-animation-delay: 0s!important;
+}
 .btn_9{
-    width:5.7037rem;
-    height:1.7778rem;
-    left:2rem;
-    bottom:5%;
+    width:5.8074rem;
+    height:2.2815rem;
+    left:5rem;
+    bottom:7%;
     z-index: 10;
     -webkit-animation-duration: 1s!important;
     -webkit-animation-delay: 0s!important;
 
 }
 .btn_10{
-    width:5.8667rem;
-    height:2.1037rem;
-    right:2rem;
-    bottom:5%;
+    width:5.1259rem;
+    height:2.2370rem;
+    right:0.5rem;
+    bottom:7%;
     z-index: 10;
     -webkit-animation-duration: 1s!important;
     -webkit-animation-delay: 0s!important;
@@ -331,6 +340,90 @@ canvas{
 .p2_popup{
     z-index:100;
 }
+.haibao{
+    background: rgba(0,0,0,0.7);
+    z-index: 100;
+}
+.p2_delete{
+    width:1.0519rem;
+    height:0.7704rem;
+    right:0;
+    top:0.5rem;
+}
+#p2_canvas_2{
+    width:11.0222rem;
+    height:19.0518rem;
+    left:2.5rem;
+    top:50%;
+    margin-top:-11rem;
+}
+#showImg{
+    width:11.0222rem;
+    height:19.0518rem;
+    left:2.5rem;
+    top:50%;
+    margin-top:-11rem;
+}
+.long_tap{
+    width:16rem;
+    height:2.1778rem;
+    top:50%;
+    margin-top: 9rem;
+    left:0;
+}
+.p2_center_bg{
+    width:11.0222rem;
+    height:21.7333rem;
+    left:2.5rem;
+    top:50%;
+    margin-top: -11rem;
+}
+.p2_center_name{
+    width:11.0222rem;
+    height:6rem;
+    left:0;
+    top:3rem;
+}
+.my3{
+    height:1.872rem;
+    left:0.5rem;
+    top:0;
+}
+.my4{
+    width:3.654rem;
+}
+.my5{
+    width:7.34rem;
+}
+#zz{
+    left:0.5rem;
+    font-size: 1.84rem;
+    top:2rem;
+}
+
+
+.p2_center_er{
+    width:2.7111rem;
+    height:2.7111rem;
+    left:4.15rem;
+    top:9rem;
+}
+.p2_center_words{
+    width:4.3704rem;
+    height:4.1333rem;
+    left:3.315rem;
+    top:12rem;
+}
+
+
+
+
+
+
+
+
+
+
 /*p3*/
 .p3_3{
     background: url("../img/p2/bg.jpg") no-repeat center;
