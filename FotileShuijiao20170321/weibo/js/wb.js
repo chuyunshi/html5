@@ -112,9 +112,9 @@ $(document).ready(function() {
                     $(".wx").html(obj.data.wx);
                     $(".wb").html(obj.data.wb);
                     page.active_percent = Math.floor(obj.data.scale * 100);
-                    //page.active_percent =40;
-                    if (page.active_percent < 9) {
-                        page.active_percent = "0" + page.active_percent;
+                    //page.active_percent =30;
+                    if (page.active_percent <= 9) {
+                        $(".right_percent").css("left","63px")
                     }
                     $(".right_num").html(page.active_percent);
                     page._canvas.wave_up();

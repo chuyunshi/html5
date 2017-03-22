@@ -35,9 +35,9 @@ $(document).ready(function() {
             page.resize();
             page.loading.init();
             page.p1.init();
-            page.p2.init();
+           // page.p2.init();
             page.p3.init();
-            page.video.init();
+           // page.video.init();
             /*  $.getScript( "js/font.js",function(){
 
              console.log("success")
@@ -193,6 +193,8 @@ $(document).ready(function() {
                     }, 2,'ease-in-out',function(){
                         $(".p1").hide();
                         $(".video").show();
+                        page.p2.init();
+                        page.video.init();
                        /* setTimeout(function(){
                             $(".video_cd_img").addClass("playing1-stop");
                         },2000)*/
@@ -283,6 +285,8 @@ $(document).ready(function() {
                     $.getScript('js/share.js', function () {
                         console.log('重新加载');
                     });
+                }else{
+
                 }
             },
             _shanghairen: function () {
@@ -373,8 +377,9 @@ $(document).ready(function() {
                             //console.log('重新加载');
                         });
                         if (_index == 0) {
-                            $(".zzz").css("margin-left", "1rem");
+                            $(".zzz").css("margin-left", "1.1rem");
                             $(".video_name").css("margin-left", "0.5rem");
+                            $("#zz").css("left","1.3rem")
                         }
 
 
@@ -454,8 +459,36 @@ $(document).ready(function() {
         p2: {
             init: function () {
                 page.p2._btn_click();
+                page.p2._canvas_img()
+            },
+            _canvas_img:function(){
+                var showImg=document.getElementById("showImg");
+                var _canVas = document.getElementById("p2_canvas_2");
+                var ctx = _canVas.getContext("2d");
+                var canvas_words;
+                var bg_img = new Image();
+                bg_img.src = "img/p2/22.png";
+                _canVas.width=744;
+                _canVas.height=1286;
+                if(_video == 1){
+                    canvas_words = "我是方太"
+                }else{
+                    canvas_words = "我是"
+                }
+                bg_img.onload = function(){
+                    ctx.drawImage(bg_img,0,0,744,1286);
+                    ctx.font="120px AR-NewHeiGB-U";
+                    ctx.fillStyle="#bc4747";
+                    ctx.fillText(canvas_words,50,430)
+                    ctx.fillText(_shareName,50,580);
+                    var img = document.getElementById("img");
+                    img.src = _canVas.toDataURL();
+                }
             },
             _btn_click: function () {
+                $(".btn_8").on("click",function(){
+                    $(".haibao").show();
+                })
                 $(".btn_9").on("click", function () {
                     createjs.Ticker.reset();
                     $(".p2").hide();
@@ -466,9 +499,13 @@ $(document).ready(function() {
                     page.p3._active_num();
                     //page.device.init2();
                 })
+
                 $(".btn_10").on("click", function () {
                     $(".pub_popup").show();
                     page.p2._share_pic()
+                })
+                $(".p2_delete").on("click",function(){
+                    $(".haibao").hide();
                 })
             },
             _share_pic: function () {
@@ -486,15 +523,11 @@ $(document).ready(function() {
         p3: {
             init: function () {
                 page.p3._btn_click();
-                /* page.p3.wave1();
+               /* page.p3.wave1();
+                page.p3.wave2();
+                page.p3.wave3();
+                page.p3._active_num();*/
 
-                 page.p3.wave2();
-
-                 page.p3.wave3();
-
-                 page.p3._active_num();
-
-                 page.p3._active_list();*/
             },
             _active_num: function () {
                 var active_num = 0;
@@ -509,11 +542,11 @@ $(document).ready(function() {
                     $("#p3_wb").html(obj.data.wb);
                     page.active_percent = Math.floor(obj.data.scale * 100);
                     console.log(page.active_percent)
-                    //page.active_percent =100
+                    //page.active_percent =22
                     page.p3.wave_up();
-                    if (page.active_percent < 9) {
-                        page.active_percent = "0" + page.active_percent;
-                    }
+                    //if (page.active_percent < 9) {
+                        //page.active_percent = "" + page.active_percent;
+                    //}
                     $("#_active_percent").html(page.active_percent);
                 })
             },
@@ -852,6 +885,7 @@ $(document).ready(function() {
                     page.p3._active_num();
                     page.p3._active_list();
                     page.BGM.play();
+                    page.DIE.pause();
 
                     //page._canvas.playAni1('p2', 'p2_canvas', 25, 0)
                 });
