@@ -1,0 +1,233 @@
+<script language="javascript">
+    //判断是否手机访问
+    var ua = navigator.userAgent;
+    var ipad = ua.match(/(iPad).*OS\s([\d_]+)/),
+            isIphone = !ipad && ua.match(/(iPhone\sOS)\s([\d_]+)/),
+            isAndroid = ua.match(/(Android)\s+([\d.]+)/),
+            isMobile = isIphone || isAndroid;
+    if(isIphone){
+    }else{
+        // location.href = 'http://wechat.fotile.com/2017awe/index2.html';
+    }
+</script>
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>妈妈的时间机器</title>
+    <meta name="format-detection" content="telephone=no">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=0,minimum-scale=1.0,maximum-scale=1.0,minimal-ui" />
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="stylesheet" href="css/animate.min.css"/>
+    <link rel="stylesheet" href="css/swiper.min.css"/>
+    <link rel="stylesheet" href="css/main.css"/>
+    <link rel="stylesheet" href="css/my-animate.css"/>
+</head>
+<body class="hidden">
+<div class="page re ">
+
+    <div class="page ab" id="errorScreen">
+        <div class="font ab turn">
+            <img src="img/hp.png" alt=""/>
+        </div>
+    </div>
+    <audio class="bgm" src="img/images/sound/bgm.mp3"></audio>
+
+    <div class="loading p0 ab hidden page">
+        <div class="ab loading_gif">
+            <img src="img/p0/loading.gif" alt=""/>
+        </div>
+        <div class="ab s s2 ">
+
+        </div>
+        <canvas class="ab rem canvas hide" id="p0"></canvas>
+    </div>
+
+    <video class="ab _video" id="video2"  preload="auto" src="http://game.gtimg.cn/images/game/act/a20160603wow/wow1.mp4">
+    </video>
+    <video class="ab _video" id="video3"  preload="auto"  src="http://game.gtimg.cn/images/game/act/a20160603wow/wow0.mp4">
+    </video>
+    <video class="ab _video" id="video4" preload="auto" src="http://7xvl2z.com1.z0.glb.clouddn.com/nigg2.mp4">
+    </video>
+
+    <div class="ab p1 rem hidden hide">
+        <video class="ab" id="video1" poster="http://wechat.fotile.com/2017awe/img/images/loading/loading0.jpg" playsinline webkit-playsinline="true"
+               x5-video-player-type="h5" x-video-player-fullscreen="true"
+               x-webkit-airplay="true">
+            <source src="http://wechat.fotile.com/2017awe/img/images/video/panzi2.mp4" />
+            <!-- <source src="http://7xvl2z.com1.z0.glb.clouddn.com/nigg2.mp4" />-->
+        </video>
+
+        <div class="fx music_icon">
+            <div class="ab music_open hide">
+                <img class="ab " src="img/p0/00_03.png" alt=""/>
+                <img class="ab hide" src="img/p0/01_03.png" alt=""/>
+                <img class="ab hide" src="img/p0/02_03.png" alt=""/>
+                <img class="ab hide" src="img/p0/03_03.png" alt=""/>
+                <img class="ab hide" src="img/p0/04_03.png" alt=""/>
+                <img class="ab hide" src="img/p0/05_03.png" alt=""/>
+                <img class="ab hide" src="img/p0/06_03.png" alt=""/>
+                <img class="ab hide" src="img/p0/07_03.png" alt=""/>
+            </div>
+            <div class="ab music_close ">
+                <img class="ab hide" src="img/p0/0_03.png" alt=""/>
+                <img class="ab hide" src="img/p0/1_03.png" alt=""/>
+                <img class="ab hide" src="img/p0/2_03.png" alt=""/>
+                <img class="ab hide" src="img/p0/3_03.png" alt=""/>
+                <img class="ab hide" src="img/p0/4_03.png" alt=""/>
+                <img class="ab hide this" src="img/p0/5_03.png" alt=""/>
+            </div>
+        </div>
+        <!--  <div class="ab link_1" style="left:0;top:0;height:4rem;width:4rem;">
+
+          </div>-->
+
+        <div class="ab p1_words_1 animated fadeIn">
+            <img src="img/p1/005.png" alt=""/>
+        </div>
+        <div class="ab p1_words_2 animated fadeIn">
+            <img src="img/p1/006.png" alt=""/>
+        </div>
+        <div class="ab p1_words_3 hide z_index">
+            <img src="img/p1/003.png" alt=""/>
+        </div>
+
+        <div class="ab panzi_small animated fadeIn">
+            <img src="img/p1/panzi_small.png" alt=""/>
+        </div>
+        <div class="ab tap animated fadeIn z_index">
+            <img class="ab tap_1 star1" src="img/p1/001.png" alt=""/>
+            <img class="ab tap_2 star2" src="img/p1/001.png" alt=""/>
+            <img class="ab tap_3" src="img/p1/002.png" alt=""/>
+        </div>
+        <div class="ab tap_10086  z_index">
+        </div>
+    </div>
+
+    <div class="ab rem p1_1 hidden animated hide">
+        <img class="ab" src="img/images/panzi/panzi3051.jpg" alt=""/>
+        <img class="ab red_line" src="img/p1/004.png" alt=""/>
+        <img class="ab hand  up_down " src="img/p1/007.png" alt=""/>
+    </div>
+
+    <div class="ab page hidden p2 hide">
+        <!--<canvas class="ab rem rem_imp" id="p1"></canvas>-->
+        <div class="ab guita animated fadeIn">
+            <img src="img/p3/guita2.png" alt=""/>
+        </div>
+
+        <div class="ab rem rem_imp">
+            <!-- <div class="ab swiper-container animated fadeIn">
+                 <div class="swiper-wrapper">
+                     <div class="swiper-slide">
+                         <img src="img/p3/111_03.png" alt=""/>
+                     </div>
+                     <div class="swiper-slide">
+                         <img src="img/p3/222_03.png" alt=""/>
+                     </div>
+                     <div class="swiper-slide">
+                         <img src="img/p3/333_03.png" alt=""/>
+                     </div>
+                 </div>
+             </div>-->
+            <div class="ab swiper-container1 animated fadeIn">
+                <img src="img/p3/m4.gif" alt=""/>
+            </div>
+
+
+            <div class="ab video_btn">
+                <img class="ab" src="img/p3/00_03.png" alt=""/>
+                <img class="ab hide" src="img/p3/01_03.png" alt=""/>
+                <img class="ab hide" src="img/p3/02_03.png" alt=""/>
+                <img class="ab hide" src="img/p3/03_03.png" alt=""/>
+            </div>
+        </div>
+
+        <div class="ab logo animated fadeIn">
+            <img src="img/p2/7.png" alt=""/>
+        </div>
+        <div class="ab center animated fadeIn">
+            <img src="img/p2/8.png" alt=""/>
+        </div>
+        <div class=" bottom">
+            <img class="ab p2_words_1 animated fadeIn" src="img/p2/1.png" alt=""/>
+            <img class="ab p2_words_2 animated fadeIn" src="img/p2/2.png" alt=""/>
+            <img class="ab p2_words_3 animated fadeIn" src="img/p2/3.png" alt=""/>
+            <img class="ab p2_words_4 animated fadeIn" src="img/p2/4.png" alt=""/>
+            <div class="ab p2_words_5 animated fadeIn">
+                <a href="http://fotile.69dp.cn/site/share?s=101">
+                    <img class="ab" src="img/p2/000_07.png" alt=""/>
+                    <img class="ab hide" src="img/p2/001_07.png" alt=""/>
+                    <img class="ab hide" src="img/p2/002_07.png" alt=""/>
+                    <img class="ab hide" src="img/p2/003_07.png" alt=""/>
+                </a>
+            </div>
+
+            <div class="ab p2_words_6 animated fadeIn">
+                <img class="ab" src="img/p2/004_09.png" alt=""/>
+                <img class="ab hide" src="img/p2/005_09.png" alt=""/>
+                <img class="ab hide" src="img/p2/006_09.png" alt=""/>
+                <img class="ab hide" src="img/p2/007_09.png" alt=""/>
+            </div>
+
+        </div>
+        <div class="ab page top animated fadeIn hide">
+            <img class="ab" src="img/p3/bg_top.png" alt=""/>
+            <img class="ab p3_panzi" src="img/p3/panzi.png" alt=""/>
+        </div>
+    </div>
+
+</div>
+<script src="js/zepto.min.js"></script>
+<script src="js/swiper.min.js"></script>
+<script src="js/event.js"></script>
+<script src="js/fx.js"></script>
+<script src="js/createjs-2015.11.26.min.js"></script>
+<script src="js/rem.js"></script>
+<script src="js/touch.js"></script>
+<script src="js/jweixin-1.0.0.js"></script>
+<script src="js/main3.js?v=201703021440"></script>
+<script>
+    document.write("<script src='jssdk.php?url="+escape(window.location.href)+"&v=1.0'><\/script>");
+
+    var sharedata = {
+        title:'按住这只小碟仙，发生什么都别松',
+        link:'http://wechat.fotile.com/2017awe/index.html',
+        img:'http://wechat.fotile.com/2017awe/img/share.jpg'
+    }
+    var sharedata1 = {
+        title:'按住这只小碟仙',
+        link:'http://wechat.fotile.com/2017awe/index.html',
+        img:'http://wechat.fotile.com/2017awe/img/share.jpg',
+        desc:'速度有点快，请系好安全带',
+    }
+
+    wxcallback(sharedata);
+    function wxcallback(sharedata)
+    {
+        var share1 = {
+            title: sharedata.title,
+            link: sharedata.link,
+            imgUrl: sharedata.img,
+            success: sharedata.success,
+            cancel: sharedata.cancel
+        };
+
+        var share2 = {
+            title: sharedata1.title,
+            link: sharedata1.link,
+            imgUrl: sharedata1.img,
+            desc: sharedata1.desc,
+            success: sharedata.success,
+            cancel: sharedata.cancel
+        };
+
+        wx.ready(function () {
+            wx.onMenuShareTimeline(share1);
+            wx.onMenuShareAppMessage(share2);
+        });
+    }
+</script>
+</body>
+</html>
