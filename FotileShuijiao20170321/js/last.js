@@ -35,9 +35,9 @@ $(document).ready(function() {
             page.resize();
             page.loading.init();
             page.p1.init();
-           // page.p2.init();
-            page.p3.init();
-           // page.video.init();
+            // page.p2.init();
+           // page.p3.init();
+            // page.video.init();
             /*  $.getScript( "js/font.js",function(){
 
              console.log("success")
@@ -53,14 +53,14 @@ $(document).ready(function() {
                     if (l_t < 50) {
                         l_t = l_t + 4;
                     } else {
-                        l_t = l_t * 1.04;
+                        l_t = l_t * 1.1;
                     }
                     $(".panzi1").css("-webkit-transform", "rotateZ(" + l_t + "deg)")
                     if (l_t >= 5000) {
                         clearInterval(timer_loading);
                         $(".loading").hide();
-                        $(".p1").show();
-                        page.p1.btn_click();
+                        $(".p3").show();
+                        page.p3.init();
                     }
                 }, 100);
             },
@@ -193,8 +193,8 @@ $(document).ready(function() {
                     }, 2,'ease-in-out',function(){
                         $(".p1").hide();
                         $(".video").show();
-                        page.video.init();
                         page.p2.init();
+                        page.video.init();
                         /* setTimeout(function(){
                          $(".video_cd_img").addClass("playing1-stop");
                          },2000)*/
@@ -285,6 +285,8 @@ $(document).ready(function() {
                     $.getScript('js/share.js', function () {
                         console.log('重新加载');
                     });
+                }else{
+
                 }
             },
             _shanghairen: function () {
@@ -377,6 +379,7 @@ $(document).ready(function() {
                         if (_index == 0) {
                             $(".zzz").css("margin-left", "1.1rem");
                             $(".video_name").css("margin-left", "0.5rem");
+                            $("#zz").css("left","1.3rem")
                         }
 
 
@@ -388,7 +391,6 @@ $(document).ready(function() {
                         };
                         $youzikuClient.getFontFace(entity, function (result) {
                             $(".zzz").html(_valuee);
-                            $("#zz").html(_valuee);
                         });
                         $(".video_name").html(_valueq);
 
@@ -497,6 +499,7 @@ $(document).ready(function() {
                     page.p3._active_num();
                     //page.device.init2();
                 })
+
                 $(".btn_10").on("click", function () {
                     $(".pub_popup").show();
                     page.p2._share_pic()
@@ -520,15 +523,11 @@ $(document).ready(function() {
         p3: {
             init: function () {
                 page.p3._btn_click();
-                /* page.p3.wave1();
-
+                 page.p3.wave1();
                  page.p3.wave2();
-
                  page.p3.wave3();
-
                  page.p3._active_num();
 
-                 page.p3._active_list();*/
             },
             _active_num: function () {
                 var active_num = 0;
@@ -538,17 +537,16 @@ $(document).ready(function() {
                     console.log(obj.data);
                     active_num = obj.data.total;
                     $("#_active_num").html(active_num);
-                    $(".p3_p").html(active_num);
                     $("#_other_num").html(1000000 - active_num);
                     $("#p3_wx").html(obj.data.wx);
                     $("#p3_wb").html(obj.data.wb);
                     page.active_percent = Math.floor(obj.data.scale * 100);
                     console.log(page.active_percent)
-                    //page.active_percent =100
+                    //page.active_percent =22
                     page.p3.wave_up();
-                    if (page.active_percent < 9) {
-                        page.active_percent = "0" + page.active_percent;
-                    }
+                    //if (page.active_percent < 9) {
+                    //page.active_percent = "" + page.active_percent;
+                    //}
                     $("#_active_percent").html(page.active_percent);
                 })
             },
@@ -727,7 +725,7 @@ $(document).ready(function() {
                     _top -= 0.1;
                     $(".canvas_box").css("bottom", _height + "rem");
                     $(".p3_already").css("top", _top + "rem")
-                    if (_top <= _max) {
+                    if (_top <= _max||_top<=0) {
                         clearInterval(timer);
                         page.p3._active_list();
                         setTimeout(function () {
@@ -885,11 +883,10 @@ $(document).ready(function() {
                     page.p3.wave2();
                     page.p3.wave3();
                     page.p3._active_num();
-                    page.p3._active_list();
+                    //page.p3._active_list();
                     page.BGM.play();
-                    /*$(".video").hide();
-                    $(".p2").show();
-                    page._canvas.playAni1('p2', 'p2_canvas', 25, 0)*/
+                    page.DIE.pause();
+
                     //page._canvas.playAni1('p2', 'p2_canvas', 25, 0)
                 });
                 $(".video_btn_11").on("click", function () {

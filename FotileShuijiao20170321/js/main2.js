@@ -725,7 +725,7 @@ $(document).ready(function() {
                     _top -= 0.1;
                     $(".canvas_box").css("bottom", _height + "rem");
                     $(".p3_already").css("top", _top + "rem")
-                    if (_top <= _max) {
+                    if (_top <= _max||_top<=0) {
                         clearInterval(timer);
                         page.p3._active_list();
                         setTimeout(function () {
@@ -883,7 +883,7 @@ $(document).ready(function() {
                     page.p3.wave2();
                     page.p3.wave3();
                     page.p3._active_num();
-                    page.p3._active_list();
+                    //page.p3._active_list();
                     page.BGM.play();
                     page.DIE.pause();
 

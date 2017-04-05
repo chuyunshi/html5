@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>对话师兄</title>
+    <meta name="format-detection" content="telephone=no">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=0,minimum-scale=1.0,maximum-scale=1.0,minimal-ui" />
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="stylesheet" href="css/animate.min.css"/>
+    <link rel="stylesheet" href="css/swiper.min.css"/>
+    <link rel="stylesheet" href="css/main.css"/>
+    <link rel="stylesheet" href="css/my-animate.css"/>
+</head>
+<body class="hidden">
+<div class="page re ">
+
+    <audio preload id="bgm" class="bgm" loop="loop">
+        <source src="img/music/video.mp3" type="audio/mpeg">
+    </audio>
+    <audio preload id="bgm1" class="bgm1">
+        <source src="img/music/message.mp3" type="audio/mpeg">
+    </audio>
+
+
+    <div class="page ab" id="errorScreen">
+        <div class="font ab turn">
+            <img src="img/hp.png" alt=""/>
+        </div>
+        <p class="p ab">为了更好的体验，请将手机竖屏</p>
+    </div>
+    <div class="ab page loading">
+        <div class="ab loading_pic">
+            <img class="ab" src="img/loading_top.png" alt=""/>
+        </div>
+        <div class="ab loading_top hide">
+
+        </div>
+        <p class="ab loading_p">Loading... &nbsp;&nbsp;<span id="loading_num">0%</span></p>
+    </div>
+    <div class="ab p0 page hide">
+        <div class="ab man_pic">
+            <img class="ab pic_man animated fadeInUp" src="img/01/portrait.png" alt=""/>
+            <img class="ab name animated fadeInUp" src="img/01/name.png" alt=""/>
+            <img class="ab video animated fadeInUp" src="img/01/videochat.png" alt=""/>
+        </div>
+        <div class="ab no pub_p0 animated fadeInLeft">
+            <img src="img/01/hangup.png" alt=""/>
+        </div>
+        <div class="ab yes pub_p0 animated fadeInRight">
+            <img src="img/01/answer.png" alt=""/>
+        </div>
+    </div>
+
+
+    <div class="p0_0 page ab hide">
+        <div class="ab p0_0_text1 p0_0_text animated fadeInUp">
+            <img class="ab p0_0_ge animated fadeInUp" src="img/02/ge.png" alt=""/>
+            <img class="ab p0_0_1 p0_0_pub animated fadeInUp" src="img/02/text01.png" alt=""/>
+        </div>
+        <div class="ab p0_0_text2 p0_0_text animated fadeInUp">
+            <img class="ab p0_0_ge" src="img/02/ge.png" alt=""/>
+            <img class="ab p0_0_2 p0_0_pub animated fadeInUp" src="img/02/text02.png" alt=""/>
+        </div>
+        <div class="ab p0_0_text3 p0_0_text animated fadeInUp">
+            <img class="ab p0_0_ge" src="img/02/ge.png" alt=""/>
+            <img class="ab p0_0_3 p0_0_pub animated fadeInUp" src="img/02/text03.png" alt=""/>
+        </div>
+        <div class="ab p0_0_text4 p0_0_text animated fadeInUp">
+            <img class="ab p0_0_ge" src="img/02/ge.png" alt=""/>
+            <img class="ab p0_0_4 p0_0_pub animated fadeInUp" src="img/02/text04.png" alt=""/>
+        </div>
+        <div class="ab p0_0_text5 p0_0_text animated fadeInUp">
+            <img class="ab p0_0_ge" src="img/02/ge.png" alt=""/>
+            <img class="ab p0_0_5 p0_0_pub animated fadeInUp" src="img/02/text05.png" alt=""/>
+        </div>
+        <div class="ab p0_0_text6 p0_0_text animated fadeInUp">
+            <img class="ab p0_0_ge" src="img/02/ge.png" alt=""/>
+            <img class="ab p0_0_6 p0_0_pub animated fadeInUp" src="img/02/text06.png" alt=""/>
+        </div>
+        <div class="ab p0_0_hand up_down1 hide">
+            <img src="img/02/hand.png" alt=""/>
+        </div>
+    </div>
+
+
+
+    <div class="ab swiper-container page hide" id="swiper1">
+        <div class="swiper-wrapper page">
+            <div class="swiper-slide page ">
+                <div class="ab gefeng02 ani" swiper-animate-effect="fadeInRight" swiper-animate-duration="0.5s" swiper-animate-delay="0.3s">
+                    <img src="img/03/gefeng02.png" alt=""/>
+                </div>
+                <div class="ab duihua ani" swiper-animate-effect="fadeInLeft" swiper-animate-duration="0.5s" swiper-animate-delay="0.3s">
+                    <img src="img/03/duihua.png" alt=""/>
+                </div>
+                <div class="ab p1_logo ani" swiper-animate-effect="fadeIn" swiper-animate-duration="1s" swiper-animate-delay="0s">
+                    <img src="img/03/logo.png" alt=""/>
+                </div>
+                <div class="ab text01 ani" swiper-animate-effect="fadeInUp" swiper-animate-duration="0.5s" swiper-animate-delay="1s">
+                    <img src="img/03/text01.png" alt=""/>
+                </div>
+                <div class="ab text02 ani" swiper-animate-effect="fadeInUp" swiper-animate-duration="0.5s" swiper-animate-delay="1.5s">
+                    <img src="img/03/text02.png" alt=""/>
+                </div>
+                <div class="ab text03 ani" swiper-animate-effect="fadeInUp" swiper-animate-duration="0.5s" swiper-animate-delay="2s">
+                    <img src="img/03/text03.png" alt=""/>
+                </div>
+            </div>
+            <div class="swiper-slide page">
+                <div class="ab p1_logo ani" swiper-animate-effect="fadeIn" swiper-animate-duration="1s" swiper-animate-delay="0s">
+                    <img src="img/03/logo.png" alt=""/>
+                </div>
+                <div class="ab ani text" swiper-animate-effect="fadeIn" swiper-animate-duration="1s" swiper-animate-delay="0.5s">
+                    <img src="img/04/text.png" alt=""/>
+                </div>
+            </div>
+            <div class="swiper-slide page">
+                <div class="ab p1_logo ani" swiper-animate-effect="fadeIn" swiper-animate-duration="1s" swiper-animate-delay="0">
+                    <img src="img/03/logo.png" alt=""/>
+                </div>
+                <div class="ab p3_text ani" swiper-animate-effect="fadeIn" swiper-animate-duration="1s" swiper-animate-delay="0.5s">
+                    <img src="img/05/text.png" alt=""/>
+                </div>
+                <div class="ab p3_logo ani" swiper-animate-effect="fadeIn" swiper-animate-duration="1s" swiper-animate-delay="0.5s">
+                    <img src="img/05/logo.png" alt=""/>
+                </div>
+            </div>
+
+
+            <div class="swiper-slide page">
+                <div class="ab ani p4_title" swiper-animate-effect="fadeIn" swiper-animate-duration="1s" swiper-animate-delay="0">
+                    <img src="img/06/text.png" alt=""/>
+                </div>
+                <div class="ab swiper-container page2 ani" swiper-animate-effect="fadeIn" swiper-animate-duration="1s" swiper-animate-delay="0.5s" id="swiper2">
+                    <div class="swiper-wrapper page2">
+                        <div class="swiper-slide page2 ">
+                            <img class="slide0 slide" src="img/06/0.png" alt=""/>
+                        </div>
+                        <div class="swiper-slide page2 ">
+                            <img class="ab man_2 slide1 slide" src="img/06/1.png" alt=""/>
+                        </div>
+                        <div class="swiper-slide page2 ">
+                            <img class="slide2 slide" src="img/06/2.png" alt=""/>
+                        </div>
+                        <div class="swiper-slide page2 ">
+                            <img class="slide3 slide" src="img/06/3.png" alt=""/>
+                        </div>
+                        <div class="swiper-slide page2">
+                            <img class="ab man_5 slide4 slide" src="img/06/4.png" alt=""/>
+                        </div>
+                        <div class="swiper-slide page2">
+                            <img class="slide5 slide" src="img/06/5.png" alt=""/>
+                        </div>
+                    </div>
+                    <div class="swiper-button-prev ab p4_click" id="p4_left">
+                        <img src="img/07/right.png" alt=""/>
+                    </div>
+                    <div class="swiper-button-next swiper-button-next2 ab p4_click" id="p4_right">
+                        <img src="img/07/left.png" alt=""/>
+                    </div>
+                </div>
+                <div class="ab jieshao ani" swiper-animate-effect="fadeIn" swiper-animate-duration="1s" swiper-animate-delay="0.5s">
+                    <img src="img/06/1_1.png" alt=""/>
+                </div>
+            </div>
+
+            <div class="swiper-slide page">
+                <div class="ab ani p5_text0" swiper-animate-effect="fadeInLeft" swiper-animate-duration="0.5s" swiper-animate-delay="1s">
+                    <img src="img/08/newtext.png" alt=""/>
+                </div>
+                <div class="ab ani p5_text" swiper-animate-effect="fadeIn" swiper-animate-duration="1s" swiper-animate-delay="0.5s">
+                    <img src="img/08/text.png" alt=""/>
+                </div>
+                <div class="ab ani p5_text2" swiper-animate-effect="fadeInLeft" swiper-animate-duration="0.5s" swiper-animate-delay="1s">
+                    <img src="img/08/text02.png" alt=""/>
+                </div>
+                <div class="ab ani p5_women" swiper-animate-effect="fadeInLeft" swiper-animate-duration="0.5s" swiper-animate-delay="2s">
+                    <img src="img/08/beau.png" alt=""/>
+                </div>
+                <div class="ab ani p5_text3" swiper-animate-effect="fadeInLeft" swiper-animate-duration="0.5s" swiper-animate-delay="1.5s">
+                    <img src="img/08/text03.png" alt=""/>
+                </div>
+                <div class="ab ani p5_text4" swiper-animate-effect="fadeInRight" swiper-animate-duration="0.5s" swiper-animate-delay="2s">
+                    <img src="img/08/text04.png" alt=""/>
+                </div>
+            </div>
+        </div>
+        <div class="swiper-button-next swiper-button-next1  ab  up_down" id="p1_down">
+            <img src="img/03/dwon.png" alt=""/>
+        </div>
+    </div>
+</div>
+<script>
+    var urlPrefix ="http://h5.seemse.com/job2017";
+</script>
+<script src="js/zepto.min.js"></script>
+<script src="js/swiper.min.js"></script>
+<script src="js/event.js"></script>
+<script src="js/fx.js"></script>
+<script src="js/createjs-2015.11.26.min.js"></script>
+<script src="js/rem.js"></script>
+<script src="js/share.js"></script>
+<script src="js/jweixin-1.0.0.js"></script>
+<script src="js/swiper.animate1.0.2.min.js"></script>
+<script src="js/main.js?v=20170401"></script>
+
+
+</body>
+</html>
