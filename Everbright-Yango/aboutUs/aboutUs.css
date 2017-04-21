@@ -1,0 +1,163 @@
+.aboutUstext{
+    width:20%;
+    bottom:10%;
+    left:40%;
+}
+.marginTop{
+    margin-top: 70px;
+}
+.banner{
+    background: #fff;
+}
+.center{
+    text-align: center;
+}
+.ulBox a{
+    color:#000;
+}
+.ulBox a:hover,a:focus{
+    text-decoration: none;
+}
+.ulBox{
+    width:90px;
+    left:50%;
+    margin-left:-45px;
+    margin-bottom: 50px;
+}
+.linkLeft{
+    font-size:15px;
+    font-weight: bolder;
+    padding:4px 0;
+    border-bottom: 2px solid #f1ad64;
+    margin-bottom:5px;
+}
+.linkLeft:hover{
+    background: #f1ad64;
+}
+.linkLeft a:hover,.linkLeft a:focus{
+    color:#000;
+}
+.linkRight{
+    padding:3px 0;
+}
+.bg_yellow{
+    background: #f1ad64;
+}
+.yellow a{
+    color:#f1ad64;
+}
+.linkRight a:hover{
+    color:#f1ad64;
+}
+/*基本介绍*/
+.nameTitle{
+    width:75%;
+}
+.titleLogo{
+    width:35%;
+    margin: 20px 0;
+}
+.linkPage p{
+    text-indent:28px;
+    line-height: 28px;
+}
+.linkPage h4{
+    font-weight: bolder;
+    margin-top: 30px;
+}
+/*合作伙伴*/
+.page1pic{
+    width:80%;
+    margin-bottom: 40px;
+}
+/*股东公司*/
+.page2Title1{
+    width:80%;
+}
+.page2Title2{
+    width:60%;
+}
+.marTop{
+    margin-top: 30px;
+}
+.btnbox{
+    margin-top: 100px;
+    display: inline-block;
+    width:25px;
+    padding:  0;
+    border:1px solid #999;
+    border-radius: 3px;
+}
+.page2right,.page5right,.page6right{
+    transform: rotateZ(180deg);
+}
+.btnbox:hover{
+    background: #aaa;
+}
+/*公司愿景*/
+.pageTitle{
+    width:40%;
+    margin-bottom: 30px;
+}
+
+/*高管履历*/
+.page5Title{
+    width:30%;
+}
+.page5p1{
+    margin-top: 40px;
+}
+.linkpage h4{
+    font-weight: bolder;
+    margin-top: 60px;
+}
+.linkpage p{
+    margin-top: 30px;
+}
+/*图案管理*/
+.page6Title{
+    width:30%;
+}
+.page6people{
+
+}
+.page6Name{
+    font-weight: bolder;
+}
+
+@media screen and (max-width: 768px) {
+    .marginTop {
+        margin-top: 30px;
+    }
+    .page6Name{
+        text-align: center;
+    }
+    .page6people{
+        width:150px;
+    }
+    .page5Title,.page6Title{
+        width:150px;
+    }
+    .page2Btn,.page5Btn{
+        text-align: center !important;
+    }
+
+}
+@media screen and (min-width: 992px) {
+    .pageTitle{
+        width:270px;
+        margin-bottom: 30px;
+    }
+    .page3pic,.page4pic{
+        width:675px;
+    }
+    .page1pic{
+        width:540px;
+    }
+}
+@media only screen and (max-width:500px ) {
+    .pageTitle{
+        width:150px;
+        margin-bottom: 30px;
+    }
+}

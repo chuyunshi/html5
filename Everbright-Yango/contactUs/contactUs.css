@@ -1,0 +1,12 @@
+.address{
+    width:80%;
+    margin-left: 10%;
+}
+.qq{
+    display: inline-block;
+    width:65px;
+    padding: 2px;
+}
+.addressTitle{
+    margin: 30px 0;
+}

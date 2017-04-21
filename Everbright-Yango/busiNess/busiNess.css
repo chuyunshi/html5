@@ -1,0 +1,93 @@
+.aboutUstext{
+    width:20%;
+    bottom:10%;
+    left:40%;
+}
+.marginTop{
+    margin-top: 70px;
+}
+.banner{
+    background: #fff;
+}
+.center{
+    text-align: center;
+}
+.center{
+    text-align: center;
+}
+.ulBox a{
+    color:#000;
+}
+.ulBox a:hover,a:focus{
+    text-decoration: none;
+}
+.ulBox{
+    width:120px;
+    left:50%;
+    margin-left:-60px;
+    margin-bottom: 50px;
+}
+.linkLeft{
+    font-size:15px;
+    font-weight: bolder;
+    padding:4px 0;
+    border-bottom: 2px solid #f1ad64;
+    margin-bottom:5px;
+}
+.linkLeft:hover{
+    background: #f1ad64;
+}
+.linkLeft a:hover,.linkLeft a:focus{
+    color:#000;
+}
+.bg_yellow{
+    background: #f1ad64;
+}
+
+.text_indent{
+    text-indent: 28px;
+}
+.marginBottom70{
+    margin-bottom: 70px;
+}
+
+.pageTitle{
+    width:30%;
+    margin-bottom:50px;
+}
+
+.wordsBox{
+    width:80%;
+    left:10%;
+    border:1px solid #f1ad64;
+    padding: 30px 15px;
+    margin-bottom: 70px;
+}
+.textTitle{
+    padding:0 15px;
+    top:-22px;
+    background: #fff;
+    left:50%;
+    transform: translateX(-50%);
+}
+.textTitle h4{
+    font-weight: bolder;
+}
+.wordsBox p{
+    line-height: 30px;
+}
+
+
+
+@media screen and (max-width: 600px) {
+    .pageTitle{
+        width:156px;
+    }
+
+}
+@media screen and (min-width: 992px) {
+    .pageTitle{
+        width:202px;
+    }
+
+}

@@ -1,0 +1,24 @@
+.aboutUstext{
+    width:20%;
+    bottom:10%;
+    left:40%;
+}
+#myCarousel{
+    margin-bottom: 100px;
+}
+.carousel-indicators li{
+    border: none !important;
+    background: #a3a3a3 !important;
+    border-radius: 0 !important;
+    height: 3px !important;
+    width: 37px !important;
+    margin-bottom:-60px !important;
+}
+.carousel-indicators .active{
+    background: #f1ad64 !important;
+}
+@media screen and (max-width: 768px) {
+    #myCarousel{
+        margin-bottom: 50px;
+    }
+}

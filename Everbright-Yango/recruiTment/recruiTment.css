@@ -1,0 +1,35 @@
+.aboutUstext{
+    width:20%;
+    bottom:10%;
+    left:40%;
+}
+.ulLi{
+    margin: 40px 0 60px 0;
+}
+.ulLi li{
+    list-style:disc ;
+    margin-left: 15px;
+}
+
+.pay{
+    margin-bottom: 30px;
+}
+.pay img{
+    width:50%;
+    margin-bottom: 10px;
+}
+@media screen and (max-width: 992px) {
+    .pay img{
+        width:30%;
+    }
+}
+@media screen and (max-width: 768px) {
+    .pay img{
+        width:120px;
+    }
+}
+@media screen and (max-width: 560px) {
+    .pay img{
+        width:80px;
+    }
+}
