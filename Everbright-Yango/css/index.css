@@ -37,6 +37,9 @@ body{
 body img{
     width:100%;
 }
+a:focus{
+    text-decoration: none;
+}
 /*index*/
 .top_bg{
     width:100%;
