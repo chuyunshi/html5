@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+
+    <meta name="format-detection" content="telephone=no">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=0,minimum-scale=1.0,maximum-scale=1.0,minimal-ui" />
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="stylesheet" href="css/animate.min.css"/>
+    <link rel="stylesheet" href="css/csshake.min.css"/>
+    <link rel="stylesheet" href="css/main.css"/>
+    <link rel="stylesheet" href="css/my_animate.css"/>
+
+    <title>《一生所爱》520火热拍摄中！</title>
+</head>
+<body class="re page hidden">
+<div class="page1 ab animated" id="errorScreen">
+    <img class="ab shupin_text" src="img/shupin_text.png" alt=""/>
+</div>
+<audio preload id="bgm" class="bgm">
+    <source src="img/media/sound/black.mp3" type="audio/mpeg">
+</audio>
+<div class="ab page hidden page_Box animated fadeIn">
+    <div class="page loading ab ">
+        <div class="ab loading_left loading_hide ">
+            <div class="header_pic ab">
+                <img class="ab" src="img/loading/loading_pic1.png" alt=""/>
+                <img class="ab hide" src="img/loading/loading_pic2.png" alt=""/>
+                <img class="ab hide" src="img/loading/loading_pic3.png" alt=""/>
+                <img class="ab hide" src="img/loading/loading_pic4.png" alt=""/>
+            </div>
+            <span class="ab loading_text center">loading</span>
+        </div>
+        <div class="ab loading_right loading_hide ">
+            <div class="ab right_pic">
+                <img class="ab" src="img/loading/loading_pic_right.png" alt=""/>
+            </div>
+            <span class="ab loading_num center" id="loading_num"></span>
+        </div>
+        <div class="page ab loading_btn  hide">
+            <div class="ab page video_box ">
+                <img class="ab videoBox" src="img/videoBox/box2.png" alt=""/>
+                <img class="ab rec fadeio" src="img/videoBox/rec.png" alt=""/>
+            </div>
+            <div class="ab black_words animated fadeIn">
+                <img class="ab" src="img/loading/black.png" alt=""/>
+            </div>
+            <div class="ab load_btn animated fadeIn hide">
+                <img class="ab" src="img/loading/loading_btn1.png" alt=""/>
+                <img class="ab hide" src="img/loading/loading_btn2.png" alt=""/>
+                <img class="ab btn_head" src="img/loading/btn_head.png" alt=""/>
+            </div>
+        </div>
+    </div>
+    <div class="ab page video_area hide">
+        <video class="ab" poster="" id="video_1" preload playsinline webkit-playsinline >
+            <source src="img/media/video/1.mp4" />
+        </video>
+    </div>
+    <div class="ab video_guide_first page animated fadeIn hide">
+        <div class="ab page video_box ">
+            <img class="ab videoBox" src="img/videoBox/box2.png" alt=""/>
+            <img class="ab rec fadeio v1_rec" src="img/videoBox/rec.png" alt=""/>
+            <div class="ab tiaoguo1 hide">
+                <img class="ab" src="img/video1/tiaoguo.png" alt=""/>
+            </div>
+        </div>
+        <div class="ab video1_bg page animated fadeIn hide">
+            <img class="ab blur" src="img/video1/bg.png" alt=""/>
+            <div class="page ab">
+                <img class="ab v1_text animated fadeIn hide" src="img/video1/v1_text.png" alt=""/>
+                <div class="ab video1_btn animated fadeIn hide" data-ban="daban1">
+                    <img class="ab zhengban animated fadeInUp hide" src="img/video1/zhengban.png" alt=""/>
+                    <img class="ab btn1 big_small" src="img/video1/btn_start.png" alt=""/>
+                    <img class="ab btn2 hide" src="img/video1/btn_next.png" alt=""/>
+                    <img class="ab btn_head" src="img/loading/btn_head.png" alt=""/>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="ab video_guide_secend page animated fadeIn hide">
+        <div class="ab page video_box ">
+            <img class="ab videoBox" src="img/videoBox/box.png" alt=""/>
+            <img class="ab rec fadeio" src="img/videoBox/rec.png" alt=""/>
+            <div class="ab tiaoguo2 hide">
+                <img class="ab" src="img/video1/tiaoguo.png" alt=""/>
+            </div>
+        </div>
+        <div class="ab hand_box">
+            <img class="ab" src="img/video2/hand_white.png" alt=""/>
+            <img class="ab hide hand_black" src="img/video2/hand_black.png" alt=""/>
+        </div>
+        <img class="ab none_see animated fadeIn hide" src="img/video2/none_see.png" alt=""/>
+        <div class="ab page talk_words  hide">
+            <img class="ab bg blur1 boTtom hide" src="img/bg.jpg" alt=""/>
+            <div class="ab page video_box ">
+                <img class="ab videoBox" src="img/videoBox/box2.png" alt=""/>
+                <img class="ab rec fadeio" src="img/videoBox/rec.png" alt=""/>
+            </div>
+            <div class="v2_text">
+                <img class="ab text_first animated fadeInDown" src="img/video2/text_first.png" alt=""/>
+                <img class="ab text_left fadeInUp2 hide" src="img/video2/text_left.png" alt=""/>
+                <img class="ab text_right fadeInUp3 hide" src="img/video2/text_right.png" alt=""/>
+            </div>
+
+
+            <div class="ab mengliao_text animated fadeIn v2_back zhengdong hide">
+                <img class="ab zhengdong" src="img/video2/mengliao_text.png" alt=""/>
+            </div>
+            <div class="ab fire animated fadeInRight v2_back zhengdong hide">
+                <img class="ab zhengdong" src="img/video2/fire_1.png" alt=""/>
+                <img class="ab zhengdong hide" src="img/video2/fire_2.png" alt=""/>
+            </div>
+            <!--按钮3-->
+            <div class="page ab v2_btn  v2_back hide">
+                <div class="ab btn_left btn zhengdong animated fadeInUp v2_back" data-name="3" data-ban="daban2">
+                    <img class="ab btn1 " src="img/video2/btn_left.png" alt=""/>
+                    <img class="ab btn2 hide" src="img/video2/btn_left_next.png" alt=""/>
+                    <img class="ab shaqin big_small1 hide" src="img/video2/shaqin.png" alt=""/>
+                    <img class="ab star1 star fedeInOut1" src="img/video2/star1.png" alt=""/>
+                    <img class="ab star2 star fedeInOut3" src="img/video2/star2.png" alt=""/>
+                    <img class="ab star3 star fedeInOut2" src="img/video2/star3.png" alt=""/>
+                </div>
+                <div class="ab btn_center btn zhengdong animated fadeInUp v2_back" data-name="4" data-ban="daban3">
+                    <img class="ab btn1" src="img/video2/btn_center.png" alt=""/>
+                    <img class="ab btn2 hide" src="img/video2/btn_center_next.png" alt=""/>
+                    <img class="ab shaqin big_small1 hide" src="img/video2/shaqin.png" alt=""/>
+                    <img class="ab star4 star fedeInOut3" src="img/video2/star4.png" alt=""/>
+                    <img class="ab star5 star fedeInOut1" src="img/video2/star5.png" alt=""/>
+                    <img class="ab star6 star fedeInOut2" src="img/video2/star6.png" alt=""/>
+                </div>
+                <div class="ab btn_right btn zhengdong animated fadeInUp v2_back" data-name="5" data-ban="daban4">
+                    <img class="ab btn1" src="img/video2/btn_right.png" alt=""/>
+                    <img class="ab btn2 hide" src="img/video2/btn_right_next.png" alt=""/>
+                    <img class="ab shaqin big_small1 hide" src="img/video2/shaqin.png" alt=""/>
+                    <img class="ab star7 star fedeInOut2" src="img/video2/star7.png" alt=""/>
+                    <img class="ab star8 star fedeInOut3" src="img/video2/star8.png" alt=""/>
+                    <img class="ab star9 star fedeInOut1" src="img/video2/star9.png" alt=""/>
+                </div>
+            </div>
+        </div>
+        <div class="ab  progress1">
+            <img class="ab" src="img/videoMain/progress_box.png" alt=""/>
+            <div class="ab hidden progress_content_box1">
+                <img class="ab progress_content1" src="img/videoMain/progress_content.png" alt=""/>
+                <span class="ab progress_num1"></span>
+            </div>
+            <img class="ab" src="img/videoMain/progress_top.png" alt=""/>
+            <img class="ab hide progress_success1" src="img/videoMain/progress_success.png" alt=""/>
+            <img class="ab hide progress_next1" src="img/videoMain/progress_next.png" alt=""/>
+            <div class="progress_right1">
+                <img class="ab progress_pic11 hide" src="img/videoMain/pic1.png" alt=""/>
+                <img class="ab progress_pic21 hide" src="img/videoMain/pic2.png" alt=""/>
+                <img class="ab progress_pic31 hide" src="img/videoMain/head2.png" alt=""/>
+                <img class="ab progress_pic41 hide" src="img/videoMain/head1.png" alt=""/>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="ab video_main page animated fadeIn hide">
+        <div class="ab page video_box ">
+            <img class="ab videoBox" src="img/videoBox/box.png" alt=""/>
+            <img class="ab rec fadeio" src="img/videoBox/rec.png" alt=""/>
+        </div>
+
+        <div class="ab progress animated fadeIn">
+
+            <img class="ab" src="img/videoMain/progress_box.png" alt=""/>
+            <div class="ab hidden progress_content_box">
+                <img class="ab progress_content" src="img/videoMain/progress_content.png" alt=""/>
+                <span class="ab progress_num"></span>
+            </div>
+            <img class="ab" src="img/videoMain/progress_top.png" alt=""/>
+            <img class="ab hide progress_success" src="img/videoMain/progress_success.png" alt=""/>
+            <img class="ab hide progress_next" src="img/videoMain/progress_next.png" alt=""/>
+            <div class="progress_right">
+                <img class="ab progress_pic1 hide" src="img/videoMain/pic1.png" alt=""/>
+                <img class="ab progress_pic2 hide" src="img/videoMain/pic2.png" alt=""/>
+                <img class="ab progress_pic3 hide" src="img/videoMain/head2.png" alt=""/>
+                <img class="ab progress_pic4 hide" src="img/videoMain/head1.png" alt=""/>
+            </div>
+
+        </div>
+        <div class="ab last_pic page animated fadeIn hide">
+            <div class="ab left_c1 c1 hide">
+                <img class="ab" src="img/videoMain/c1_left.png" alt=""/>
+                <img class="ab" src="img/videoMain/c2_left.png" alt=""/>
+            </div>
+            <div class="ab center_c1 c1 hide">
+                <img class="ab" src="img/videoMain/c1_center.png" alt=""/>
+                <img class="ab" src="img/videoMain/c2_center.png" alt=""/>
+            </div>
+            <div class="ab right_c1 c1 hide">
+                <img class="ab" src="img/videoMain/c1_right.png" alt=""/>
+                <img class="ab" src="img/videoMain/c2_right.png" alt=""/>
+            </div>
+        </div>
+
+        <div class="ab page popupBtn hide">
+            <img class="ab title_text animated fadeIn" src="img/videoMain/title_text.png" alt=""/>
+            <div class="btn_pub hide">
+                <div class="ab btn_top btn animated lightSpeedIn">
+                    <a href="http://wqs.jd.com/event/gouwuquan/muse520.html#djw">
+                        <img class="ab btn1" src="img/videoMain/btn1.png" alt=""/>
+                        <img class="ab btn2 hide" src="img/videoMain/btn11.png" alt=""/>
+                    </a>
+                </div>
+                <div class="ab btn_next btn animated lightSpeedIn">
+                    <img class="ab btn1" src="img/videoMain/btn2.png" alt=""/>
+                    <img class="ab btn2 hide" src="img/videoMain/btn22.png" alt=""/>
+                </div>
+                <div class="ab btn_bottom btn animated lightSpeedIn">
+                    <img class="ab btn1" src="img/videoMain/btn3.png" alt=""/>
+                    <img class="ab btn2 hide" src="img/videoMain/btn33.png" alt=""/>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="ab caidan page animated fadeIn hide">
+        <div class="ab page video_box hide">
+            <img class="ab videoBox" src="img/videoBox/box2.png" alt=""/>
+            <img class="ab rec fadeio" src="img/videoBox/rec.png" alt=""/>
+        </div>
+        <div class="ab page caidan_control">
+            <img class="ab bg" src="img/caidan/bottom.png" alt=""/>
+
+            <div class="ab caidan_box">
+                <img class="ab light big_small4" src="img/caidan/light.png" alt=""/>
+                <img class="ab bong big_small3" src="img/caidan/bong.png" alt=""/>
+            </div>
+            <img src="img/caidan/xing1.png" class="xing ab x1 xing1 hide">
+            <img src="img/caidan/xing2.png" class="xing ab x2 xing2 hide">
+            <img src="img/caidan/xing3.png" class="xing ab x3 xing3 hide">
+            <img src="img/caidan/xing4.png" class="xing ab x4 xing4 hide">
+            <img src="img/caidan/xing5.png" class="xing ab x5 xing5 hide">
+            <img src="img/caidan/xing4.png" class="xing ab x4 xing6 hide">
+            <img src="img/caidan/xing4.png" class="xing ab x4 xing7 hide">
+            <img src="img/caidan/xing1.png" class="xing ab x1 xing8 hide">
+            <img src="img/caidan/xing2.png" class="xing ab x2 xing9 hide">
+            <img src="img/caidan/xing3.png" class="xing ab x3 xing10 hide">
+            <img src="img/caidan/xing4.png" class="xing ab x4 xing11 hide">
+            <img src="img/caidan/xing5.png" class="xing ab x5 xing12 hide">
+            <img src="img/caidan/xing4.png" class="xing ab x4 xing13 hide">
+            <img src="img/caidan/xing4.png" class="xing ab x4 xing14 hide">
+            <img src="img/caidan/xing1.png" class="xing ab x1 xing15 hide">
+            <img src="img/caidan/xing2.png" class="xing ab x2 xing16 hide">
+            <img src="img/caidan/xing3.png" class="xing ab x3 xing17 hide">
+            <img src="img/caidan/xing4.png" class="xing ab x4 xing18 hide">
+            <img src="img/caidan/xing5.png" class="xing ab x5 xing19 hide">
+            <img src="img/caidan/xing4.png" class="xing ab x4 xing20 hide">
+            <img src="img/caidan/xing4.png" class="xing ab x4 xing21 hide">
+            <img src="img/caidan/xing5.png" class="xing ab hide x5 xing22">
+            <img src="img/caidan/xing4.png" class="xing ab hide x4 xing23">
+            <img src="img/caidan/xing4.png" class="xing ab hide x4 xing24">
+            <img src="img/caidan/xing1.png" class="xing ab hide x1 xing25">
+            <img src="img/caidan/xing2.png" class="xing ab hide x2 xing26">
+            <img src="img/caidan/xing3.png" class="xing ab hide x3 xing27">
+            <img src="img/caidan/xing4.png" class="xing ab hide x4 xing28">
+            <img src="img/caidan/xing5.png" class="xing ab hide x5 xing29">
+            <img src="img/caidan/xing4.png" class="xing ab hide x4 xing30">
+            <div class="ab caidan_btn animated fadeIn hide">
+                <img class="ab btn1 " src="img/caidan/btn1.png" alt=""/>
+                <img class="ab btn2 " src="img/caidan/btn2.png" alt=""/>
+            </div>
+        </div>
+        <div class="ab page caidan_end animated fadeIn hide">
+            <img class="ab title_text" src="img/caidan/ready.png" alt=""/>
+            <div class="ab caidan_end_btn1 caidan_end_btn">
+                <a href="http://wqs.jd.com/event/gouwuquan/muse520.html#djw">
+                    <img class="ab btn1" src="img/caidan/btn3.png" alt=""/>
+                    <img class="ab btn2 hide" src="img/caidan/btn33.png" alt=""/>
+                </a>
+            </div>
+            <div class="ab caidan_end_btn2 caidan_end_btn">
+                <img class="ab btn1" src="img/caidan/btn4.png" alt=""/>
+                <img class="ab btn2 hide" src="img/caidan/btn44.png" alt=""/>
+            </div>
+        </div>
+    </div>
+
+    <div class="ab page share animated fadeIn hide">
+        <div>
+            <img class="ab share_pic" src="img/videoMain/share_page.jpg" alt=""/>
+        </div>
+        <img class="ab share_text" src="img/videoMain/share_text.png" alt=""/>
+    </div>
+
+    <div class="daban daban1 ab ">
+        <img class="ab" src="img/daban/ban_1.png" alt=""/>
+        <img class="ab hide" src="img/daban/ban_2.png" alt=""/>
+    </div>
+    <div class="daban daban2 ab ">
+        <img class="ab" src="img/daban/ban_3.png" alt=""/>
+        <img class="ab hide" src="img/daban/ban_4.png" alt=""/>
+    </div>
+    <div class="daban daban3 ab ">
+        <img class="ab" src="img/daban/ban_5.png" alt=""/>
+        <img class="ab hide" src="img/daban/ban_6.png" alt=""/>
+    </div>
+    <div class="daban daban4 ab ">
+        <img class="ab" src="img/daban/ban_7.png" alt=""/>
+        <img class="ab hide" src="img/daban/ban_8.png" alt=""/>
+    </div>
+
+</div>
+
+<script src="js/zepto.min.1.js"></script>
+<script src="js/event.js"></script>
+<script src="js/fx.js"></script>
+<script src="js/createjs-2015.11.26.min.js"></script>
+<script src="js/rem.js"></script>
+<script src="js/main.js?v=05171143"></script>
+<script>
+</script>
+</body>
+</html>
